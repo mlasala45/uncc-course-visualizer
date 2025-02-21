@@ -126,14 +126,46 @@ interface CatalogRecordSection {
     detailsByCourseId: Map<CourseId, CourseDataEntry>
 }
 
+export interface QueryDownloadProgress {
+    numPagesDownloaded: number
+    numPagesDetected: number
+    startedDetailsDownload: boolean
+    numDetailsDownloaded: number
+    numCoursesDetected: number
+}
+
+export function equals_QueryDownloadProcess(a: QueryDownloadProgress, b: QueryDownloadProgress) {
+    return a.numDetailsDownloaded == b.numDetailsDownloaded &&
+        a.numPagesDetected == b.numPagesDetected &&
+        a.numPagesDownloaded == b.numPagesDownloaded &&
+        a.startedDetailsDownload == b.startedDetailsDownload
+}
+
 class CatalogDownloader {
     dataByRecordKey: ArrayDictionary<CourseRecordsKey, CatalogRecordSection>
+    downloadProgress: QueryDownloadProgress
+    downloadEventCallback: () => void
 
     constructor() {
         this.dataByRecordKey = new ArrayDictionary<CourseRecordsKey, CatalogRecordSection>({
             keyGetter: item => item.recordKey,
             keyEquals: (k0, k1) => k0.catalogId == k1.catalogId && k0.prefix == k1.prefix
         })
+        this.resetDownloadProgress()
+    }
+
+    resetDownloadProgress() {
+        this.downloadProgress = {
+            numDetailsDownloaded: 0,
+            numPagesDetected: 0,
+            numPagesDownloaded: 0,
+            startedDetailsDownload: false,
+            numCoursesDetected: 0
+        }
+    }
+
+    #onDownloadProgressEvent() {
+        if (this.downloadEventCallback) this.downloadEventCallback()
     }
 
     downloadCoursesByCOID(courseIds: CourseId[], catalogId: CatalogId) {
@@ -146,6 +178,8 @@ class CatalogDownloader {
     }
 
     async queryListingsForPrefix(coursePrefix: string, catalogId: CatalogId) {
+        //Do not reset progress, as we may have multiple downloads running concurrently
+
         const matches = new Set<CourseListing>()
         let page = 1
         const url = generateCourseListingRequestUrl({
@@ -156,6 +190,9 @@ class CatalogDownloader {
         const { data } = await axios.get(url);
         extractCourseListingsFromHTML(data, catalogId, matches)
 
+        this.downloadProgress.numPagesDownloaded++
+        this.#onDownloadProgressEvent()
+
         let pageCount = extractPageCountFromCourseListingsHTML(data)
         //There's no way to get an error page count right now, but in case we need one, here's a handler
         if (pageCount == -1) {
@@ -163,6 +200,9 @@ class CatalogDownloader {
             console.error(`Query URL: ${url}`)
             pageCount = 1
         }
+
+        this.downloadProgress.numPagesDetected += pageCount
+        this.#onDownloadProgressEvent()
 
         if (pageCount > 1) {
             for (page = 2; page <= pageCount; page++) {
@@ -173,8 +213,13 @@ class CatalogDownloader {
                 })
                 const { data } = await axios.get(url);
                 extractCourseListingsFromHTML(data, catalogId, matches)
+
+                this.downloadProgress.numPagesDownloaded++
+                this.#onDownloadProgressEvent()
             }
         }
+        this.downloadProgress.numCoursesDetected += matches.size
+        this.#onDownloadProgressEvent()
 
         return matches
     }
@@ -182,10 +227,13 @@ class CatalogDownloader {
     async downloadDetailsForAllCoursesWithPrefix(coursePrefix: string, catalogId: CatalogId) {
         const listings = await this.queryListingsForPrefix(coursePrefix, catalogId)
 
+        this.downloadProgress.startedDetailsDownload = true
         const detailPromises: Promise<CourseDataEntry | undefined>[] = []
         listings?.forEach(data => {
             if (data.courseId == '' || data.courseId == undefined) {
                 console.error(`Listing for undefined course ID! catalogId=${data.catalogId}, courseName=${data.name}`)
+                this.downloadProgress.numCoursesDetected--
+                this.#onDownloadProgressEvent()
             }
             else {
                 const promise = this.downloadCourseDetails({
@@ -209,6 +257,10 @@ class CatalogDownloader {
         const { data } = await axios.get(url);
         const details = extractCourseDataFromHTML(courseId, catalogId, data)
         if (details) this.#recordCourseDetails(catalogId, details)
+
+        this.downloadProgress.numDetailsDownloaded++
+        this.#onDownloadProgressEvent()
+        
         return details
     }
 

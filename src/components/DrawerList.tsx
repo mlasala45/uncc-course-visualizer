@@ -14,6 +14,7 @@ import { catalogDownloader } from '../App';
 import { CATALOG_ID_GRADUATE_2024_TO_2025, CATALOG_ID_UNDERGRAD_2024_TO_2025 } from '../catalog-downloader/constants';
 import { CatalogId, CourseDataEntry, CourseId, CourseRecordsKey } from '../catalog-downloader/types';
 import UpdateIcon from '@mui/icons-material/Update';
+import { equals_QueryDownloadProcess, QueryDownloadProgress } from '../catalog-downloader/CatalogDownloader';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -33,6 +34,20 @@ interface DrawerListProps {
     regenerateGraph: (matchingRecords: Map<CourseId, CourseDataEntry>) => void
 }
 
+function DownloadStatusMessages({ downloadProgress }: {
+    downloadProgress: QueryDownloadProgress
+}) {
+    const typography = (message) => <Typography variant='body1' color={color} align='left'>{message}</Typography>
+
+    const color = 'green'
+    const lines: React.JSX.Element[] = []
+    lines.push(typography(`Downloading listing pages (${downloadProgress.numPagesDownloaded}/${downloadProgress.numPagesDetected == 0 ? '?' : downloadProgress.numPagesDetected})`))
+    if (downloadProgress.startedDetailsDownload)
+        lines.push(typography(`Downloading course details (${downloadProgress.numDetailsDownloaded}/${downloadProgress.numCoursesDetected})`))
+
+    return <Box>{lines}</Box>
+}
+
 function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
     const theme = useTheme();
 
@@ -40,6 +55,8 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
     const [retrieving, setRetrieving] = useState(false)
     const [catalogs, setCatalogs] = useState([] as CatalogId[])
     const [numMatchingRecords, setNumMatchingRecords] = useState(0)
+
+    const [retrievalEventCounter, setRetrievalEventCounter] = useState(0)
 
     const matchingRecordsRef = useRef(new Map<CourseId, CourseDataEntry>())
 
@@ -80,6 +97,10 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
 
     function startUpdatingRecords() {
         setRetrieving(true)
+        setRetrievalEventCounter(0)
+
+        catalogDownloader.resetDownloadProgress()
+        catalogDownloader.downloadEventCallback = () => setRetrievalEventCounter(v => v + 1)
 
         const prefixes = getPrefixes()
 
@@ -135,6 +156,8 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
 
     let invalidInputStr = getPrefixes().length == 0
 
+    const DownloadStatusMessages_Memoized = React.memo(DownloadStatusMessages, (a, b) => equals_QueryDownloadProcess(a.downloadProgress, b.downloadProgress))
+
     return (
         <Box sx={{ width: 400 }} role="presentation">
             <DrawerHeader>
@@ -159,7 +182,7 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
                 </Stack>
                 <Typography variant='body1' color={invalidInputStr ? 'red' : 'green'} align='left'>
                     {invalidInputStr ?
-                        <Fragment>Invalid input. Requires four letter prefix codes, separated by commas.<br/>Eg. ITSC,ECGR,ITIS</Fragment> :
+                        <Fragment>Invalid input. Requires four letter prefix codes, separated by commas.<br />Eg. ITSC,ECGR,ITIS</Fragment> :
                         `Click button to reload graph.`}
                 </Typography>
                 <Box display='flex' flexDirection='column' alignItems={'flex-start'}>
@@ -176,8 +199,8 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
                     <Button variant='contained' disabled={retrieving} onClick={startUpdatingRecords}>Retrieve New Information</Button>
                     {retrieving && <CircularProgress size={25} />}
                 </Stack>
-                {retrieving && <Button variant='contained' onClick={stopUpdatingRecords}>Cancel</Button>
-                }
+                {retrieving && <Button variant='contained' onClick={stopUpdatingRecords}>Cancel</Button>}
+                {retrieving && <DownloadStatusMessages_Memoized downloadProgress={catalogDownloader.downloadProgress} />}
             </Box>
         </Box>
     )
