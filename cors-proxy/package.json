@@ -1,0 +1,12 @@
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "main": "cors-proxy.ts",
+  "scripts": {
+    "start": "ts-node cors-proxy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
