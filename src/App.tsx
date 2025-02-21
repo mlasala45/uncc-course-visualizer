@@ -11,7 +11,7 @@ import { CourseDataEntry, CourseId } from "./catalog-downloader/types";
 
 import DrawerList from './components/DrawerList'
 import Drawer from '@mui/material/Drawer';
-import { Dialog, DialogActions, DialogContent, DialogTitle, Button, Box, styled, Divider } from '@mui/material';
+import { Dialog, DialogActions, DialogContent, DialogTitle, Button, Box, styled, Divider, Stack } from '@mui/material';
 import { IconButton, TextField, Typography } from '@mui/material';
 
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -58,7 +58,7 @@ function App() {
 
     const depthByCoidByFamily = {}
     const num_families = 8
-    for (let i = 1; i <= num_families; i++) {
+    for (let i = 0; i <= num_families; i++) {
       const depthByCoid = {}
 
       const numIters = 20
@@ -155,33 +155,40 @@ function App() {
     if (dataByCourseId.size > 0) {
       generateGraphData(dataByCourseId)
     }
-    else
-    {
+    else {
       setGraphData([])
     }
   }, [])
 
   return (
     <div className="App">
-      <header className="App-header" onClick={() => {}}>
+      <header className="App-header" onClick={() => { }}>
         {graphData.length > 0 && <TangledTreeVisualization graphData={graphData} rawCourseData={rawCourseDataRef.current} />}
-        <IconButton size='small' style={{
+        <Stack direction='row' gap={2} alignItems='center' style={{
           position: 'absolute',
           top: '10px',
           left: '10px',
-          border: 'none',
-          background: '#ffffffff',
-          cursor: 'pointer',
-          borderStyle: 'solid',
-          borderColor: 'black',
-          borderWidth: 1,
-          padding: 0
-        }}
-          onClick={onClick_help}>
-          <HelpTwoToneIcon color="info" sx={{
-            fontSize: 40,
-          }} />
-        </IconButton>
+        }}>
+          <IconButton size='small' style={{
+            border: 'none',
+            background: '#ffffffff',
+            cursor: 'pointer',
+            borderStyle: 'solid',
+            borderColor: 'black',
+            borderWidth: 1,
+            padding: 0
+          }}
+            onClick={onClick_help}>
+            <HelpTwoToneIcon color="info" sx={{
+              fontSize: 40,
+            }} />
+          </IconButton>
+          <Typography color='black' style={{
+            textShadow: '0 0 4px WHITE'
+          }}>
+            <b>Press [TAB] to open controls.</b>
+          </Typography>
+        </Stack>
       </header>
       <Dialog open={helpDialogOpen} onClose={handleClose_helpDialog}>
         <DialogTitle>Need Help?</DialogTitle>

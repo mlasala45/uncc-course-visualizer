@@ -132,6 +132,7 @@ export interface QueryDownloadProgress {
     startedDetailsDownload: boolean
     numDetailsDownloaded: number
     numCoursesDetected: number
+    error: boolean
 }
 
 export function equals_QueryDownloadProcess(a: QueryDownloadProgress, b: QueryDownloadProgress) {
@@ -160,7 +161,8 @@ class CatalogDownloader {
             numPagesDetected: 0,
             numPagesDownloaded: 0,
             startedDetailsDownload: false,
-            numCoursesDetected: 0
+            numCoursesDetected: 0,
+            error: false
         }
     }
 
@@ -260,7 +262,7 @@ class CatalogDownloader {
 
         this.downloadProgress.numDetailsDownloaded++
         this.#onDownloadProgressEvent()
-        
+
         return details
     }
 
