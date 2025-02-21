@@ -374,20 +374,49 @@ export const TangledTreeVisualization = ({ graphData, rawCourseData, options = {
     }
   }
 
+  //Collect child and parent nodes
   const nodeIdsParentOfSelected = []
   const nodeIdsChildOfSelected = []
   let selectedNode
   if (hoveredNodeId) {
     selectedNode = tangleLayout.nodes.find(node => node.id == hoveredNodeId)
-    selectedNode.bundles.forEach(bundlesArr => {
-      bundlesArr.forEach(bundle => {
-        nodeIdsChildOfSelected.push(bundle.childNodeId)
+
+    const MAX_ITERS = 10
+
+    let childNodesFront = [hoveredNodeId]
+    for (let i = 0; i < MAX_ITERS; i++) {
+      const front = [...childNodesFront]
+      childNodesFront = []
+
+      front.forEach(nodeId => {
+        const nodeData = tangleLayout.nodes.find(node => node.id == nodeId)
+        if (nodeData) {
+          nodeData.bundles.forEach(bundlesArr => {
+            bundlesArr.forEach(bundle => {
+              nodeIdsChildOfSelected.push(bundle.childNodeId)
+              childNodesFront.push(bundle.childNodeId)
+            })
+          })
+        }
       })
-    })
-    if (selectedNode.incomingBundles) {
-      Object.keys(selectedNode.incomingBundles).forEach(id => nodeIdsParentOfSelected.push(id))
     }
-    //console.log(selectedNode.id)
+
+    let parentNodesFront = [hoveredNodeId]
+    for (let i = 0; i < MAX_ITERS; i++) {
+      const front = [...parentNodesFront]
+      parentNodesFront = []
+      front.forEach(nodeId => {
+        const nodeData = tangleLayout.nodes.find(node => node.id == nodeId)
+        if (nodeData && nodeData.incomingBundles) {
+          Object.keys(nodeData.incomingBundles).forEach(id => {
+            nodeIdsParentOfSelected.push(id)
+            parentNodesFront.push(id)
+          })
+        }
+      })
+
+      //console.log(selectedNode.id)
+    }
   }
 
   //color = d3.scaleOrdinal(d3.schemeObservable10).domain(Object.keys(uniqueBundleParents))
