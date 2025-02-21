@@ -1,1 +1,356 @@
-{"131328":{"courseId":"131328","name":"ITSC 1200 - Freshman Seminar","links":[],"description":"An introductory course designed to engage students in the process of learning about the University, as well as the College of Computing and Informatics in order to prepare each individual to be a successful student, leader, and individual throughout their collegiate experience.  The course lays a foundation of awareness, strategies and processes for successful transition into college.  The development of learning skills, time management skills, leadership skills and other life skills necessary for college success are emphasized.<br><br> <strong>Credit Hours:</strong> (1 to 3)<br><strong>Restriction(s):</strong> Permission of department<br><strong>Repeatability:</strong> May be repeated for credit two times.","attributes":{}},"131329":{"courseId":"131329","name":"ITSC 1212 - Introduction to Computer Science I","links":[],"description":"Introduction to basic computer literacy, computational thinking and problem-solving using a high level programming language. Programming concepts will be introduced and applied, including: operators; data types; variables, constants, and literals; expressions; control structures and program flow; basic data structures such as arrays, lists, and maps; defining and using functions; file input/output. This is an introductory programming course for non-CS majors and the first course for students interested in pursuing a computer science major or related minor.","attributes":{"Credit Hours":"(4)"}},"131330":{"courseId":"131330","name":"ITSC 1213 - Introduction to Computer Science II","links":["131329","133260","131605","133442","131607","131609","131612"],"description":"Reinforcement of computational thinking and problem-solving skills. Application of object-oriented programming principles including class design, encapsulation, inheritance, polymorphism, interfaces, abstract classes, aggregation and association. Additional topics include version control, use of debuggers and exception handling. This is the second course for students interested in pursuing a computer science major or related minor.","attributes":{"Credit Hours":"(4)","Prerequisite(s)":"ITSC 1212  with grade of C or above or DTSC 1302  with grade of C or above","Pre- or Corequisite(s)":"MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1241"}},"131332":{"courseId":"131332","name":"ITSC 1600 - Computing Professionals","links":[],"description":"An introduction to becoming a computing professional. Students learn about setting goals, defining their dream career, becoming a part of the University, planning coursework, building network, managing time, and working in a team.  Additionally, guest speakers and industry panels discuss and explain aspects of a professional career in IT-related fields.  Throughout the course, students build a professional profile including their goals, values, dream career, student organizations, coding skills, communication skills, curriculum plan, professional network, a team TED talk, resume, and a 30-second elevator pitch.","attributes":{"Credit Hours":"(2)","Restriction(s)":"Computer Science major; Freshman standing"}},"131337":{"courseId":"131337","name":"ITSC 2175 - Logic and Algorithms","links":["131329","133260","131609","131612"],"description":"A study of discreet mathematical concepts.  Introduction to propositional calculus, predicate calculus, algorithms, logic functions, finite-state machines; and logic design.  ","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 1212  or DTSC 1302 ; and MATH 1120  or MATH 1241"}},"131338":{"courseId":"131338","name":"ITSC 2214 - Data Structures and Algorithms","links":["131330"],"description":"A study of the theory and implementation of abstract data types (ADTs) including stacks, queues, and both general purpose and specialized trees and graphs.  Includes the implementation and analysis of algorithms related to the various data structures studied, including creation, searching, and traversal of ADTs.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 1213  with grade of C or above."}},"131346":{"courseId":"131346","name":"ITSC 3146 - Introduction to Operating Systems and Networking","links":["131338","133443"],"description":"Introduces the fundamentals of operating systems together with the basics of networking and communications.  Topics include: processes, thread, scheduling, cache, memory management, file systems, interprocess communication, network architecture and protocols, HTTP, MAC, IP, TCP/UPD, and Internet routing.  ","attributes":{"Credit Hours":"(3)","Restriction(s)":"College of Computing and Informatics major or minor","Prerequisite(s)":"ITSC 2214  with grade of C or above and ITSC 2181  with grade of C or above"}},"131349":{"courseId":"131349","name":"ITSC 3155 - Software Engineering","links":["131338"],"description":"An introduction to software engineering, which advances the study and application of engineering principles, methods, and techniques that can help us to improve the process of creating software as well as the resulting software products.  The course covers fundamentals of software engineering, including: modern software process models; eliciting, specifying, and evaluating software system requirements; designing software systems to embody required quality attributes, including usability and security; an introduction to reusable software design solutions in the form of software architectural styles and design patterns; software system modeling, implementation, and deployment; and software quality assurance (measurement, inspection, testing).  Project planning, working in teams, and using modern software development tools are also explored.","attributes":{"Credit Hours":"(3)","Restriction(s)":"College of Computing and Informatics major or minor","Prerequisite(s)":"ITSC 2214  with grade of C or above"}},"131352":{"courseId":"131352","name":"ITSC 3181 - Introduction to Computer Architecture","links":["131330","131337","131611"],"description":"Introduction to the fundamentals of computer architectures and their programmability using assembly and system programming.  Topics include: logic design, processor architecture, memory hierarchies, assembly programming, C programming, process and thread parallelism. ","attributes":{"Credit Hours":"(4)","Restriction(s)":"College of Computing and Informatics major or minor","Prerequisite(s)":"ITSC 1213  with grade of C or above; and ITSC 2175  or MATH 2165  with grades of C or above."}},"131357":{"courseId":"131357","name":"ITSC 3500 - Computer Science Cooperative Education Experience","links":[],"description":"This course is required of Co-op students during the semester they are working.  Participating students pay a course registration fee for transcript notation.  Assignments must be arranged and approved in advance.  The Cooperative Education Program is only open to undergraduate students; graduate level students are encouraged to contact their academic departments to inquire about academic or industrial internship options for credit.  For more information, contact the University Career Center. <br><br> <strong>Credit Hours:</strong> (0)<br><strong>Grading Method:</strong> Graded on a Pass/Unsatisfactory basis.<br><strong>Repeatability:</strong> May be repeated.","attributes":{}},"131359":{"courseId":"131359","name":"ITSC 3688 - Computers and Their Impact on Society","links":[],"description":"A study of current topics (software piracy, hacking, professional conduct) in computer science and the impact of computers on various subsets (home, government, and education) of society.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Junior or Senior standing; and either Computer Science major or minor, Humanities, Technology, and Science minor, or Linguistics minor."}},"131360":{"courseId":"131360","name":"ITSC 3695 - Computer Science Cooperative Education Seminar","links":[],"description":"Required of Co-op students immediately following each work assignment for presentation of reports on work done the prior semester.","attributes":{"Credit Hours":"(1)"}},"131372":{"courseId":"131372","name":"ITSC 4155 - Software Development Projects","links":["131338","131349","131399","131400"],"description":"Advanced software engineering concepts. Explores the entire software development process, emphasizing requirements engineering, design, implementation, test, deployment, and evolution. Advanced topics in software engineering, such as object-oriented modeling, software architecture, architectural styles, design patterns, middleware frameworks, and programming paradigms. Students apply these concepts, along with concepts from introductory programming courses, data structures and algorithms courses, and introductory software engineering courses, to a team software development project that results in an executable software system prototype.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Senior standing or permission of department.","Prerequisite(s)":"ITSC 2214  ; and ITSC 3155 , or ITIS 3300 , or ITIS 3310 ; or permission of instructor."}},"131381":{"courseId":"131381","name":"ITSC 4490 - Professional Internship","links":[],"description":"Full- or part-time academic year internship in areas complementary to the concentration area of studies and designed to allow theoretical and course-based practical learning to be applied in a supervised industrial experience. Each student&#8217;s internship program must be approved by the supervising faculty. A mid-term report and a final report to be evaluated by the supervising faculty are required. Grading by the supervising faculty in consultation with off-campus supervisor at the internship organization.<br><br> <strong>Credit Hours:</strong> (6)<br><strong>Restriction(s):</strong> Permission of department<br><strong>Repeatability:</strong> May be repeated but a maximum of six credit hours only may be used to meet a major requirement such as a major elective. Any credit above the maximum of six hours may only be used as free electives.","attributes":{}},"131382":{"courseId":"131382","name":"ITSC 4850 - Senior Project I","links":[],"description":"An individual project in the teaching, theory, or application of computer science under the direction of a faculty member. Projects must be approved by the department before they can be initiated.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Senior standing.","Prerequisite(s)":"Two 3xxx/4xxx CCI courses with grades of C or above, or permission of department."}},"131383":{"courseId":"131383","name":"ITSC 4851 - Senior Project II","links":["131382"],"description":"A continuation of <a href=\"preview_course_nopop.php?catoid=38&coid=131382\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131382&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131382&display_options[location]=tooltip&show\" id=\"tt1875\" target=\"_blank\">ITSC 4850</a><span style=\"display: none !important\">&#160;</span>.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 4850"}},"131384":{"courseId":"131384","name":"ITSC 4681 - Senior Design I","links":[],"description":"A group project in the teaching, theory, or application of computer science under the direction of a faculty member.  A group of no more than 5 students is formed by the supervising faculty member, to meet the needs of the project.  Projects must be approved by the department before they can be initiated.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Senior standing.","Prerequisite(s)":"Two 3xxx/4xxx CCI courses with grades of C or above, or permission of department."}},"131385":{"courseId":"131385","name":"ITSC 4682 - Senior Design II","links":["131384"],"description":"A continuation of <a href=\"preview_course_nopop.php?catoid=38&coid=131384\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131384&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131384&display_options[location]=tooltip&show\" id=\"tt8183\" target=\"_blank\">ITSC 4681</a><span style=\"display: none !important\">&#160;</span>.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 4681"}},"131386":{"courseId":"131386","name":"ITSC 4990 - Undergraduate Research","links":[],"description":"Undergraduate research as part of a joint undergraduate/graduate research project using existing research laboratory facilities and materials.<br><br> <strong>Credit Hours:</strong> (3)<br><strong>Restriction(s):</strong> Permission of department.<br><strong>Repeatability:</strong> May be repeated for credit up to 6 credit hours.","attributes":{}},"131387":{"courseId":"131387","name":"ITSC 4991 - Undergraduate Thesis","links":["131377","131372","131384","131382","131386"],"description":"Students explore a subject in computer science chosen for thesis research and present a written thesis to their thesis committee consisting of the thesis advisor and at least two other faculty members.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Permission of department; and, when taken for honors credit, approval of a proposal through the Honors College Application to Candidacy process the semester prior to taking the course","Prerequisite(s)":"ITCS 4232 , ITSC 4155 , ITSC 4681 , ITSC 4850 , or ITSC 4990"}},"132807":{"courseId":"132807","name":"ITSC 2600 - Computer Science Program, Identity, Career","links":[],"description":"Introduces the computer science program and develops a student&#8217;s identity and career preparedness. Students learn about the program&#8217;s progression and graduation requirements, discuss concentration choices, and make curriculum plans. The course stimulates professional identity building emphasizing ethical uses of technology, diversity, career paths, and research.  Course outcomes emphasize an inclusive culture dedicated to student success and equity in the field of computing. <em>This course is designed for internal and external transfer students, and is equivalent to the <a href=\"preview_course_nopop.php?catoid=38&coid=131332\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131332&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131332&display_options[location]=tooltip&show\" id=\"tt3351\" target=\"_blank\">ITSC 1600</a><span style=\"display: none !important\">&#160;</span> requirement for entering freshmen. </em><br><br> <strong>Credit Hours:</strong> (2)<br><strong>Restriction(s):</strong> Major in Computer Science or permission of department<br><strong>Repeatability:</strong> May not be repeated for grade replacement.","attributes":{}},"132842":{"courseId":"132842","name":"ITSC 2700 - Honors Seminar","links":[],"description":"Incorporates presentations from College of Computing and Informatics faculty, industry partners, and local entrepreneurs.  Topics and course content varies each semester but will focus on helping students identify and refine their professional goals by providing a survey of modern computing professions.","attributes":{"Credit Hours":"(1)","Restriction(s)":"Acceptance into the College of Computing and Informatics Honors Program."}},"132972":{"courseId":"132972","name":"ITSC 1110 - Introduction to Computer Science Principles","links":[],"description":"A broad-based introduction to key concepts and principles of computer science. Exploration of seven big ideas of computing: creativity, abstraction, data, algorithms, programming, the Internet, and impact of computing.","attributes":{"Credit Hours":"(3)","General Education Requirement(s) Satisfied":"Quantitative/Data Competency - Mathematics and Logical Reasoning"}},"133323":{"courseId":"133323","name":"ITSC 4750 - Honors Thesis","links":[],"description":"The Honors Thesis is an individualized experience that is developed by each student under the supervision of a faculty member (the honors project advisor).  An independent thesis project combines a research agenda with appropriate exploratory practices.  In keeping with the nature of the disciplines of the College of Computing and Informatics, the final product of these theses may vary to include (but not be limited to) a written document, an app, or a system.  In all cases, written documentation of the research performed and, if applicable, the development process leading to a prototype system, is required for the purposes of evaluation.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Permission of instructor and approval of a proposal through the Honors College Application to Candidacy process the semester prior to enrollment in the course."}},"133329":{"courseId":"133329","name":"ITSC 2610 - Community Outreach Seminar","links":[],"description":"Students learn professional skills through active community outreach.  They develop knowledge and skills in team-building; creating and applying technology-based solutions; oral and written communications; and team-based project participation and management.  This course expects students to engage in off-campus community outreach activities.<br><br> <strong>Credit Hours:</strong> (1)<br><strong>Restriction(s):</strong> Permission of department<br><strong>Repeatability:</strong> May be repeated for credit.","attributes":{}},"133443":{"courseId":"133443","name":"ITSC 2181 - Introduction to Computer Systems","links":["131329","133260"],"description":"Introduction to computer system abstractions reflected in programming languages, operating systems, architectures, and networks. Topics include: overview of computer and processor architecture, instruction set architecture and introduction to assembly language, C programming, system calls, processes and process memory layout, interfaces for memory allocation and file systems, file and directory management via the command line, network architecture and protocols (such as HTTP, MAC, IP, DNS).","attributes":{"Credit Hours":"(4)","Prerequisite(s)":"ITSC 1212  with grade of C or above or DTSC 1302  with grade of C or above"}},"138161":{"courseId":"138161","name":"ITSC 2990 - Undergraduate Research","links":[],"description":"Students will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the field of computing and informatics.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Permission of department"}},"138162":{"courseId":"138162","name":"ITSC 3990 - Undergraduate Research","links":[],"description":"Students will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the field of computing and informatics.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Permission of department"}},"138189":{"courseId":"138189","name":"ITSC 1501 - Global Social Science: The Interconnected World of Technology","links":[],"description":"All Global Theme courses explore the central, unifying question of what it means to be a citizen of the world. Through the study of one or more different peoples, societies or cultures across the globe students will be able to better understand themselves as part of a complex, interconnected world. This course is a survey of global topics related to technology and digital citizenship. Issues covered will examine past, current, and future global technologies, recognizing fact from fiction online, using technology to engage in global change, being respectful of people with differing viewpoints, equity of access to resources, global digital laws, and digital literacy. ","attributes":{"Credit Hours":"(3)","General Education Requirement(s) Satisfied":"Global Social Science"}},"138247":{"courseId":"138247","name":"ITSC 3790 - Honors Research","links":[],"description":"College of Computing and Informatics honors students will be introduced to research methodologies and will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the dynamic field of computing and informatics.","attributes":{"Credit Hours":"(3)","Restriction(s)":"College of Computing and Informatics Honors Program member in good academic standing and Permission of department."}}}
+{
+    "131328": {
+        "courseId": "131328",
+        "name": "ITSC 1200 - Freshman Seminar",
+        "links": [],
+        "description": "An introductory course designed to engage students in the process of learning about the University, as well as the College of Computing and Informatics in order to prepare each individual to be a successful student, leader, and individual throughout their collegiate experience.  The course lays a foundation of awareness, strategies and processes for successful transition into college.  The development of learning skills, time management skills, leadership skills and other life skills necessary for college success are emphasized.",
+        "attributes": {
+            "Credit Hours": "(1 to 3)",
+            "Restriction(s)": "Permission of department",
+            "Repeatability": "May be repeated for credit two times."
+        }
+    },
+    "131329": {
+        "courseId": "131329",
+        "name": "ITSC 1212 - Introduction to Computer Science I",
+        "links": [],
+        "description": "Introduction to basic computer literacy, computational thinking and problem-solving using a high level programming language. Programming concepts will be introduced and applied, including: operators; data types; variables, constants, and literals; expressions; control structures and program flow; basic data structures such as arrays, lists, and maps; defining and using functions; file input/output. This is an introductory programming course for non-CS majors and the first course for students interested in pursuing a computer science major or related minor.",
+        "attributes": {
+            "Credit Hours": "(4)"
+        }
+    },
+    "131330": {
+        "courseId": "131330",
+        "name": "ITSC 1213 - Introduction to Computer Science II",
+        "links": [
+            "131329",
+            "133260",
+            "131605",
+            "133442",
+            "131607",
+            "131609",
+            "131612"
+        ],
+        "description": "Reinforcement of computational thinking and problem-solving skills. Application of object-oriented programming principles including class design, encapsulation, inheritance, polymorphism, interfaces, abstract classes, aggregation and association. Additional topics include version control, use of debuggers and exception handling. This is the second course for students interested in pursuing a computer science major or related minor.",
+        "attributes": {
+            "Credit Hours": "(4)",
+            "Prerequisite(s)": "ITSC 1212  with grade of C or above or DTSC 1302  with grade of C or above",
+            "Pre- or Corequisite(s)": "MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1241"
+        }
+    },
+    "131332": {
+        "courseId": "131332",
+        "name": "ITSC 1600 - Computing Professionals",
+        "links": [],
+        "description": "An introduction to becoming a computing professional. Students learn about setting goals, defining their dream career, becoming a part of the University, planning coursework, building network, managing time, and working in a team.  Additionally, guest speakers and industry panels discuss and explain aspects of a professional career in IT-related fields.  Throughout the course, students build a professional profile including their goals, values, dream career, student organizations, coding skills, communication skills, curriculum plan, professional network, a team TED talk, resume, and a 30-second elevator pitch.",
+        "attributes": {
+            "Credit Hours": "(2)",
+            "Restriction(s)": "Computer Science major; Freshman standing"
+        }
+    },
+    "131337": {
+        "courseId": "131337",
+        "name": "ITSC 2175 - Logic and Algorithms",
+        "links": [
+            "131329",
+            "133260",
+            "131609",
+            "131612"
+        ],
+        "description": "A study of discreet mathematical concepts.  Introduction to propositional calculus, predicate calculus, algorithms, logic functions, finite-state machines; and logic design.  ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1212  or DTSC 1302 ; and MATH 1120  or MATH 1241"
+        }
+    },
+    "131338": {
+        "courseId": "131338",
+        "name": "ITSC 2214 - Data Structures and Algorithms",
+        "links": [
+            "131330"
+        ],
+        "description": "A study of the theory and implementation of abstract data types (ADTs) including stacks, queues, and both general purpose and specialized trees and graphs.  Includes the implementation and analysis of algorithms related to the various data structures studied, including creation, searching, and traversal of ADTs.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1213  with grade of C or above."
+        }
+    },
+    "131346": {
+        "courseId": "131346",
+        "name": "ITSC 3146 - Introduction to Operating Systems and Networking",
+        "links": [
+            "131338",
+            "133443"
+        ],
+        "description": "Introduces the fundamentals of operating systems together with the basics of networking and communications.  Topics include: processes, thread, scheduling, cache, memory management, file systems, interprocess communication, network architecture and protocols, HTTP, MAC, IP, TCP/UPD, and Internet routing.  ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "College of Computing and Informatics major or minor",
+            "Prerequisite(s)": "ITSC 2214  with grade of C or above and ITSC 2181  with grade of C or above"
+        }
+    },
+    "131349": {
+        "courseId": "131349",
+        "name": "ITSC 3155 - Software Engineering",
+        "links": [
+            "131338"
+        ],
+        "description": "An introduction to software engineering, which advances the study and application of engineering principles, methods, and techniques that can help us to improve the process of creating software as well as the resulting software products.  The course covers fundamentals of software engineering, including: modern software process models; eliciting, specifying, and evaluating software system requirements; designing software systems to embody required quality attributes, including usability and security; an introduction to reusable software design solutions in the form of software architectural styles and design patterns; software system modeling, implementation, and deployment; and software quality assurance (measurement, inspection, testing).  Project planning, working in teams, and using modern software development tools are also explored.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "College of Computing and Informatics major or minor",
+            "Prerequisite(s)": "ITSC 2214  with grade of C or above"
+        }
+    },
+    "131352": {
+        "courseId": "131352",
+        "name": "ITSC 3181 - Introduction to Computer Architecture",
+        "links": [
+            "131330",
+            "131337",
+            "131611"
+        ],
+        "description": "Introduction to the fundamentals of computer architectures and their programmability using assembly and system programming.  Topics include: logic design, processor architecture, memory hierarchies, assembly programming, C programming, process and thread parallelism. ",
+        "attributes": {
+            "Credit Hours": "(4)",
+            "Restriction(s)": "College of Computing and Informatics major or minor",
+            "Prerequisite(s)": "ITSC 1213  with grade of C or above; and ITSC 2175  or MATH 2165  with grades of C or above."
+        }
+    },
+    "131357": {
+        "courseId": "131357",
+        "name": "ITSC 3500 - Computer Science Cooperative Education Experience",
+        "links": [],
+        "description": "This course is required of Co-op students during the semester they are working.  Participating students pay a course registration fee for transcript notation.  Assignments must be arranged and approved in advance.  The Cooperative Education Program is only open to undergraduate students; graduate level students are encouraged to contact their academic departments to inquire about academic or industrial internship options for credit.  For more information, contact the University Career Center. ",
+        "attributes": {
+            "Credit Hours": "(0)",
+            "Grading Method": "Graded on a Pass/Unsatisfactory basis.",
+            "Repeatability": "May be repeated."
+        }
+    },
+    "131359": {
+        "courseId": "131359",
+        "name": "ITSC 3688 - Computers and Their Impact on Society",
+        "links": [],
+        "description": "A study of current topics (software piracy, hacking, professional conduct) in computer science and the impact of computers on various subsets (home, government, and education) of society.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Junior or Senior standing; and either Computer Science major or minor, Humanities, Technology, and Science minor, or Linguistics minor."
+        }
+    },
+    "131360": {
+        "courseId": "131360",
+        "name": "ITSC 3695 - Computer Science Cooperative Education Seminar",
+        "links": [],
+        "description": "Required of Co-op students immediately following each work assignment for presentation of reports on work done the prior semester.",
+        "attributes": {
+            "Credit Hours": "(1)"
+        }
+    },
+    "131372": {
+        "courseId": "131372",
+        "name": "ITSC 4155 - Software Development Projects",
+        "links": [
+            "131338",
+            "131349",
+            "131399",
+            "131400"
+        ],
+        "description": "Advanced software engineering concepts. Explores the entire software development process, emphasizing requirements engineering, design, implementation, test, deployment, and evolution. Advanced topics in software engineering, such as object-oriented modeling, software architecture, architectural styles, design patterns, middleware frameworks, and programming paradigms. Students apply these concepts, along with concepts from introductory programming courses, data structures and algorithms courses, and introductory software engineering courses, to a team software development project that results in an executable software system prototype.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Senior standing or permission of department.",
+            "Prerequisite(s)": "ITSC 2214  ; and ITSC 3155 , or ITIS 3300 , or ITIS 3310 ; or permission of instructor."
+        }
+    },
+    "131381": {
+        "courseId": "131381",
+        "name": "ITSC 4490 - Professional Internship",
+        "links": [],
+        "description": "Full- or part-time academic year internship in areas complementary to the concentration area of studies and designed to allow theoretical and course-based practical learning to be applied in a supervised industrial experience. Each student&#8217;s internship program must be approved by the supervising faculty. A mid-term report and a final report to be evaluated by the supervising faculty are required. Grading by the supervising faculty in consultation with off-campus supervisor at the internship organization.",
+        "attributes": {
+            "Credit Hours": "(6)",
+            "Restriction(s)": "Permission of department",
+            "Repeatability": "May be repeated but a maximum of six credit hours only may be used to meet a major requirement such as a major elective. Any credit above the maximum of six hours may only be used as free electives."
+        }
+    },
+    "131382": {
+        "courseId": "131382",
+        "name": "ITSC 4850 - Senior Project I",
+        "links": [],
+        "description": "An individual project in the teaching, theory, or application of computer science under the direction of a faculty member. Projects must be approved by the department before they can be initiated.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Senior standing.",
+            "Prerequisite(s)": "Two 3xxx/4xxx CCI courses with grades of C or above, or permission of department."
+        }
+    },
+    "131383": {
+        "courseId": "131383",
+        "name": "ITSC 4851 - Senior Project II",
+        "links": [
+            "131382"
+        ],
+        "description": "A continuation of <a href=\"preview_course_nopop.php?catoid=38&coid=131382\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131382&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131382&display_options[location]=tooltip&show\" id=\"tt4855\" target=\"_blank\">ITSC 4850</a><span style=\"display: none !important\">&#160;</span>.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 4850"
+        }
+    },
+    "131384": {
+        "courseId": "131384",
+        "name": "ITSC 4681 - Senior Design I",
+        "links": [],
+        "description": "A group project in the teaching, theory, or application of computer science under the direction of a faculty member.  A group of no more than 5 students is formed by the supervising faculty member, to meet the needs of the project.  Projects must be approved by the department before they can be initiated.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Senior standing.",
+            "Prerequisite(s)": "Two 3xxx/4xxx CCI courses with grades of C or above, or permission of department."
+        }
+    },
+    "131385": {
+        "courseId": "131385",
+        "name": "ITSC 4682 - Senior Design II",
+        "links": [
+            "131384"
+        ],
+        "description": "A continuation of <a href=\"preview_course_nopop.php?catoid=38&coid=131384\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131384&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131384&display_options[location]=tooltip&show\" id=\"tt1458\" target=\"_blank\">ITSC 4681</a><span style=\"display: none !important\">&#160;</span>.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 4681"
+        }
+    },
+    "131386": {
+        "courseId": "131386",
+        "name": "ITSC 4990 - Undergraduate Research",
+        "links": [],
+        "description": "Undergraduate research as part of a joint undergraduate/graduate research project using existing research laboratory facilities and materials.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of department.",
+            "Repeatability": "May be repeated for credit up to 6 credit hours."
+        }
+    },
+    "131387": {
+        "courseId": "131387",
+        "name": "ITSC 4991 - Undergraduate Thesis",
+        "links": [
+            "131377",
+            "131372",
+            "131384",
+            "131382",
+            "131386"
+        ],
+        "description": "Students explore a subject in computer science chosen for thesis research and present a written thesis to their thesis committee consisting of the thesis advisor and at least two other faculty members.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of department; and, when taken for honors credit, approval of a proposal through the Honors College Application to Candidacy process the semester prior to taking the course",
+            "Prerequisite(s)": "ITCS 4232 , ITSC 4155 , ITSC 4681 , ITSC 4850 , or ITSC 4990"
+        }
+    },
+    "132807": {
+        "courseId": "132807",
+        "name": "ITSC 2600 - Computer Science Program, Identity, Career",
+        "links": [],
+        "description": "Introduces the computer science program and develops a student&#8217;s identity and career preparedness. Students learn about the program&#8217;s progression and graduation requirements, discuss concentration choices, and make curriculum plans. The course stimulates professional identity building emphasizing ethical uses of technology, diversity, career paths, and research.  Course outcomes emphasize an inclusive culture dedicated to student success and equity in the field of computing. <em>This course is designed for internal and external transfer students, and is equivalent to the <a href=\"preview_course_nopop.php?catoid=38&coid=131332\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131332&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131332&display_options[location]=tooltip&show\" id=\"tt8124\" target=\"_blank\">ITSC 1600</a><span style=\"display: none !important\">&#160;</span> requirement for entering freshmen. </em>",
+        "attributes": {
+            "Credit Hours": "(2)",
+            "Restriction(s)": "Major in Computer Science or permission of department",
+            "Repeatability": "May not be repeated for grade replacement."
+        }
+    },
+    "132842": {
+        "courseId": "132842",
+        "name": "ITSC 2700 - Honors Seminar",
+        "links": [],
+        "description": "Incorporates presentations from College of Computing and Informatics faculty, industry partners, and local entrepreneurs.  Topics and course content varies each semester but will focus on helping students identify and refine their professional goals by providing a survey of modern computing professions.",
+        "attributes": {
+            "Credit Hours": "(1)",
+            "Restriction(s)": "Acceptance into the College of Computing and Informatics Honors Program."
+        }
+    },
+    "132972": {
+        "courseId": "132972",
+        "name": "ITSC 1110 - Introduction to Computer Science Principles",
+        "links": [],
+        "description": "A broad-based introduction to key concepts and principles of computer science. Exploration of seven big ideas of computing: creativity, abstraction, data, algorithms, programming, the Internet, and impact of computing.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "General Education Requirement(s) Satisfied": "Quantitative/Data Competency - Mathematics and Logical Reasoning"
+        }
+    },
+    "133323": {
+        "courseId": "133323",
+        "name": "ITSC 4750 - Honors Thesis",
+        "links": [],
+        "description": "The Honors Thesis is an individualized experience that is developed by each student under the supervision of a faculty member (the honors project advisor).  An independent thesis project combines a research agenda with appropriate exploratory practices.  In keeping with the nature of the disciplines of the College of Computing and Informatics, the final product of these theses may vary to include (but not be limited to) a written document, an app, or a system.  In all cases, written documentation of the research performed and, if applicable, the development process leading to a prototype system, is required for the purposes of evaluation.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of instructor and approval of a proposal through the Honors College Application to Candidacy process the semester prior to enrollment in the course."
+        }
+    },
+    "133329": {
+        "courseId": "133329",
+        "name": "ITSC 2610 - Community Outreach Seminar",
+        "links": [],
+        "description": "Students learn professional skills through active community outreach.  They develop knowledge and skills in team-building; creating and applying technology-based solutions; oral and written communications; and team-based project participation and management.  This course expects students to engage in off-campus community outreach activities.",
+        "attributes": {
+            "Credit Hours": "(1)",
+            "Restriction(s)": "Permission of department",
+            "Repeatability": "May be repeated for credit."
+        }
+    },
+    "133443": {
+        "courseId": "133443",
+        "name": "ITSC 2181 - Introduction to Computer Systems",
+        "links": [
+            "131329",
+            "133260"
+        ],
+        "description": "Introduction to computer system abstractions reflected in programming languages, operating systems, architectures, and networks. Topics include: overview of computer and processor architecture, instruction set architecture and introduction to assembly language, C programming, system calls, processes and process memory layout, interfaces for memory allocation and file systems, file and directory management via the command line, network architecture and protocols (such as HTTP, MAC, IP, DNS).",
+        "attributes": {
+            "Credit Hours": "(4)",
+            "Prerequisite(s)": "ITSC 1212  with grade of C or above or DTSC 1302  with grade of C or above"
+        }
+    },
+    "138161": {
+        "courseId": "138161",
+        "name": "ITSC 2990 - Undergraduate Research",
+        "links": [],
+        "description": "Students will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the field of computing and informatics.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of department"
+        }
+    },
+    "138162": {
+        "courseId": "138162",
+        "name": "ITSC 3990 - Undergraduate Research",
+        "links": [],
+        "description": "Students will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the field of computing and informatics.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of department"
+        }
+    },
+    "138189": {
+        "courseId": "138189",
+        "name": "ITSC 1501 - Global Social Science: The Interconnected World of Technology",
+        "links": [],
+        "description": "All Global Theme courses explore the central, unifying question of what it means to be a citizen of the world. Through the study of one or more different peoples, societies or cultures across the globe students will be able to better understand themselves as part of a complex, interconnected world. This course is a survey of global topics related to technology and digital citizenship. Issues covered will examine past, current, and future global technologies, recognizing fact from fiction online, using technology to engage in global change, being respectful of people with differing viewpoints, equity of access to resources, global digital laws, and digital literacy. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "General Education Requirement(s) Satisfied": "Global Social Science"
+        }
+    },
+    "138247": {
+        "courseId": "138247",
+        "name": "ITSC 3790 - Honors Research",
+        "links": [],
+        "description": "College of Computing and Informatics honors students will be introduced to research methodologies and will conduct a research project under the supervision of a faculty member, working to develop critical research skills and gain hands-on experience in the dynamic field of computing and informatics.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "College of Computing and Informatics Honors Program member in good academic standing and Permission of department."
+        }
+    }
+}

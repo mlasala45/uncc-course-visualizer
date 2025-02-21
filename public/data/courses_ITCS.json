@@ -1,1 +1,630 @@
-{"131326":{"courseId":"131326","name":"ITCS 1101 - Introduction to Computer Concepts","links":["131605","133442","131607","131609","131612"],"description":"Introductory course that gives an overview of computer hardware and software. Primary emphasis is on productivity software (word processing, spreadsheet, and graphical presentation). These applications are taught through a series of projects/assignments. Aspects of Internet research are also covered.","attributes":{"Credit Hours":"(3)","Pre- or Corequisite(s)":"MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1241"}},"131327":{"courseId":"131327","name":"ITCS 1102 - Advanced Internet Concepts","links":[],"description":"An advanced study of the Internet environment designed for any student who is familiar with office productivity tools and a user of Internet technologies; it addresses advanced concepts of computer literacy.  Topics include: concepts of website design and how to evaluate websites; proper use of synchronous and asynchronous communication tools (e.g., chat, email, IM); issues of copyright and cyber-ethics; using the Internet to do research; and publishing via the Internet.  Other topics may be added to keep the content current and relevant.  Students complete extensive Internet-oriented projects to demonstrate mastery of the skills discussed in class. ","attributes":{"Credit Hours":"(3)","Restriction(s)":"May not be taken for credit by students with a major or minor in the College of Computing and Informatics."}},"131331":{"courseId":"131331","name":"ITCS 1301 - Introduction to the Financial Services Industry","links":[],"description":"An overview of the financial services industry, including such areas as the industry components; regulatory considerations and their impact; and relations with other institutions.","attributes":{"Credit Hours":"(3)","Cross-listed Course(s)":"<a href=\"preview_course_nopop.php?catoid=38&coid=131388\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131388&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131388&display_options[location]=tooltip&show\" id=\"tt1221\" target=\"_blank\">ITIS 1301</a><span style=\"display: none !important\">&#160;</span>."}},"131333":{"courseId":"131333","name":"ITCS 1610 - Computing Applications Seminar","links":["131605","133442","131607","131609","131613"],"description":"A service-learning seminar course designed to emphasize the social relevance of computing. The course aims to inform non-computing specialists of computing technologies, research, and career opportunities. Seminar topics are intended to enhance disciplinary knowledge and to develop leadership skills related to using computing knowledge and skills in service to society. Emphasis placed on the basic concepts of leadership theory and its application within the computing discipline on an individual, group, and societal level. Students participate in team-based computing service-learning projects in the community, in conjunction with computing majors taking <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt4858\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span>. Student performance evaluation considers individual homework assignments, participation in team projects, and class participation.","attributes":{"Credit Hours":"(3) (SL)","Prerequisite(s)":"MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1242 ."}},"131334":{"courseId":"131334","name":"ITCS 1712 - Introduction to Computer Science (Honors)","links":["131609","131612","131334"],"description":"Introduction to algorithmic problem solving using high level programming languages. Basic programming concepts (decision making, iteration, subroutines) and data types (atomic and aggregates) will be taught in C++ and Java. Advanced concepts such as pointers, references, and polymorphism will be explored.","attributes":{"Credit Hours":"(3)","Pre- or Corequisite(s)":"MATH 1120  or MATH 1241 ; restricted to CCI Honors students, or an acceptable score on the ITCS 1712  placement test."}},"131335":{"courseId":"131335","name":"ITCS 2050 - Topics in Computer Science","links":[],"description":"Topics in computer science selected to supplement the regular course offerings at the 2000 level. <br><br> <strong>Credit Hours:</strong> (1 to 3)<br><strong>Restriction(s):</strong> Permission of department.<br><strong>Repeatability:</strong> May be repeated for credit with permission of department.  Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters.","attributes":{}},"131336":{"courseId":"131336","name":"ITCS 2116 - C Programming","links":[],"description":"A study of the programming language C. Data types, operators, functions, program structure, file I/O, storage classes, exceptions, concurrent programming, and the preprocessor.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Knowledge of any other computer programming language or permission of department."}},"131339":{"courseId":"131339","name":"ITCS 2215 - Design and Analysis of Algorithms","links":["131609","131612","131337","131611","131338"],"description":"Introduction to the design and analysis of algorithms. Design techniques: divide-and-conquer, greedy approach, dynamic programming. Algorithm analysis: asymptotic notation, recurrence relation, time space complexity and tradeoffs. Study of sorting, searching, hashing, and graph algorithms.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"MATH 1120  or MATH 1241 ; ITSC 2175  or MATH 2165 ; and ITSC 2214 ."}},"131340":{"courseId":"131340","name":"ITCS 2231 - Introduction to Business Programming","links":["131289"],"description":"The examination of business problems, the extraction of the logic and business rules, and the relationship between business logic, programming constructs and technologies for decision support.","attributes":{"Credit Hours":"(3)","Pre- or Corequisite(s)":"INFO 2130  or permission of department."}},"131341":{"courseId":"131341","name":"ITCS 2301 - Financial Services Computing Environment","links":["131331","131388"],"description":"The objective is for the student to gain insights on several key components in financial computing environments and the enabling technologies.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 1301  or ITIS 1301 ."}},"131342":{"courseId":"131342","name":"ITCS 3050 - Topics in Computer Science","links":[],"description":"Topics in computer science selected to supplement the regular course offerings at the 3000 level.<br><br> <strong>Credit Hours:</strong> (1 to 3)<br><strong>Restriction(s):</strong> Permission of department.<br><strong>Repeatability:</strong> May be repeated for credit with permission of department.  Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters.","attributes":{}},"131343":{"courseId":"131343","name":"ITCS 3112 - Design and Implementation of Object-Oriented Systems","links":["131338"],"description":"In-depth exploration of object-oriented programming and system development. Topics include: evolution of object-oriented methodology; concept of the object-oriented approach; object-oriented programming languages; object-oriented analysis and design; the design of software for reuse; and incremental software development.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"131344":{"courseId":"131344","name":"ITCS 3134 - Digital Image Processing","links":["131338","131613","131615"],"description":"Overview of fundamentals of image acquisition, representation, enhancement, segmentation, reconstruction, analysis and recognition. Image generation, viewing and perception; image transformations using the Fourier transform; spatial operations and filtering (spatial and frequency domain); image coding; lossless and lossy compression; boundary and region based segmentation; thresholding and classification; boundary and regional image descriptors; matching and neural networks; shape numbers.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214 , MATH 1242 , and MATH 2164  with grades of C or above."}},"131345":{"courseId":"131345","name":"ITCS 3143 - Operating Systems","links":["131338"],"description":"Introduction to multiprogramming operating systems. Process synchronization and management of memory, devices, and files; performance evaluation.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  or permission of department."}},"131347":{"courseId":"131347","name":"ITCS 3152 - Symbolic Programming","links":["131338"],"description":"Basic concepts of symbolic programming including selected topics in artificial intelligence, heuristic searching, symbolic algebra, language parsing, and theorem proving.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214 ."}},"131348":{"courseId":"131348","name":"ITCS 3153 - Introduction to Artificial Intelligence","links":["132542","131615","131338"],"description":"Basic AI-related math fundamentals and AI concepts. Topics include: probability theory and information theory; basic search/problem-solving methods, such as uninformed search, informed search, adversarial search, local search, and constraint satisfaction problem; knowledge representation and reasoning, like propositional logic and inference; probabilistic reasoning such as Bayesian networks, sampling, and decision networks; sequential decision, such as Markov decision processes and reinforcement learning; and machine learning.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"STAT 2122 , MATH 2164 , and  ITSC 2214 , or permission of department."}},"131350":{"courseId":"131350","name":"ITCS 3160 - Database Design and Implementation","links":["131330"],"description":"Logical and physical database organization, data models, design issues, and secondary storage considerations. Emphasis on actual participation in the design and implementation of databases.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 1213  or permission of department."}},"131351":{"courseId":"131351","name":"ITCS 3166 - Introduction to Computer Networks","links":["131330"],"description":"An in-depth exploration of the principles and technologies that underpin contemporary computer networks and their vital part in today&#8217;s IT landscape for seamless communication, data sharing, and the growth of emerging technologies. Key elements include: Study of packet communications; Analysis of OSI layered architectures; Study of flow and congestion control protocols at the transport layer; Investigation of routing protocols at the network layer. Students will examine the fundamental concepts and evolving aspects of network technology, including Software-Defined Networking, the provision of AI as a service, the Internet of Things (IoT), and Edge-Computing Networks, along with their practical applications in shaping smart futures (smart cities, smart transportation, smart retail, smart healthcare, and smart manufacturing). Topics Include: Basics of Internet, Network Layer Protocols, Transport Layer Protocols, Application Layer Protocols, Wireless Networking, Emerging Topics on Smart Networked System. ","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 1213  or permission of department."}},"131354":{"courseId":"131354","name":"ITCS 3211 - Computing Leaders Team Projects","links":[],"description":"A service-learning course that builds upon the leadership concepts from <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt5812\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> through focused hands-on experience with service-learning projects. Students work in teams to apply computing technologies, knowledge and skills to serve community needs.<br><br> <strong>Credit Hours:</strong> (1) (SL)<br><strong>Prerequisite(s):</strong> <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt9067\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> or <a href=\"preview_course_nopop.php?catoid=38&coid=131333\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131333&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131333&display_options[location]=tooltip&show\" id=\"tt7637\" target=\"_blank\">ITCS 1610</a><span style=\"display: none !important\">&#160;</span>.<br><strong>Repeatability:</strong> May be repeated for elective credit.","attributes":{}},"131355":{"courseId":"131355","name":"ITCS 3212 - Computing Leaders Team Leaders","links":[],"description":"A service-learning course that builds upon the leadership concepts from <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt6105\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> through focused hands-on experience with service-learning projects. Companion course to <a href=\"preview_course_nopop.php?catoid=38&coid=131354\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131354&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131354&display_options[location]=tooltip&show\" id=\"tt2123\" target=\"_blank\">ITCS 3211</a><span style=\"display: none !important\">&#160;</span>; students in this course serve as team leaders for the team projects undertaken by students in <a href=\"preview_course_nopop.php?catoid=38&coid=131354\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131354&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131354&display_options[location]=tooltip&show\" id=\"tt6084\" target=\"_blank\">ITCS 3211</a><span style=\"display: none !important\">&#160;</span>. Students lead teams to apply computing technologies, knowledge, and skills to serve community needs.<br><br> <strong>Credit Hours:</strong> (1) (SL)<br><strong>Prerequisite(s):</strong> <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt6624\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> or <a href=\"preview_course_nopop.php?catoid=38&coid=131333\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131333&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131333&display_options[location]=tooltip&show\" id=\"tt6396\" target=\"_blank\">ITCS 1610</a><span style=\"display: none !important\">&#160;</span>.<br><strong>Repeatability:</strong> May be repeated for elective credit.","attributes":{}},"131356":{"courseId":"131356","name":"ITCS 3216 - Introduction to Cognitive Science","links":["132209"],"description":"Interdisciplinary introduction to the science of the mind. Broad coverage of such topics as philosophy of mind, human memory processes, reasoning and problem solving, artificial intelligence, language processing (human and machine), neural structures and processes, and vision.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"PSYC 1101  with grade of C or above, or permission of department.","Cross-listed Course(s)":"<a href=\"preview_course_nopop.php?catoid=38&coid=133125\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=133125&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=133125&display_options[location]=tooltip&show\" id=\"tt3708\" target=\"_blank\">ITIS 3216</a><span style=\"display: none !important\">&#160;</span> and <a href=\"preview_course_nopop.php?catoid=38&coid=132245\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=132245&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=132245&display_options[location]=tooltip&show\" id=\"tt9284\" target=\"_blank\">PSYC 3216</a><span style=\"display: none !important\">&#160;</span>"}},"131358":{"courseId":"131358","name":"ITCS 3610 - Computing Leaders Seminar","links":[],"description":"A service-learning seminar course. Seminar topics are intended to enhance disciplinary knowledge and skills (computing technologies, research, careers) and to develop leadership skills by using computing knowledge and skills in service to society (service and civic engagement). Emphasis placed on the basic concepts of leadership theory and its application within the computing discipline on an individual, group, and societal level. Students participate in team-based computing service-learning projects in the community. Student performance evaluation considers individual homework assignments, participation in team projects, class participation, and feedback from those served.","attributes":{"Credit Hours":"(3) (SL)","Restriction(s)":"CCI major."}},"131361":{"courseId":"131361","name":"ITCS 4010 - Topics in Computer Science","links":[],"description":"Topics in computer science selected to supplement the regular course offerings at the 4000 level.<br><br> <strong>Credit Hours:</strong> (1 to 3)<br><strong>Restriction(s):</strong> Permission of department.<br><strong>Repeatability:</strong> May be repeated for credit with permission of department.   Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters.","attributes":{}},"131362":{"courseId":"131362","name":"ITCS 4102 - Programming Languages","links":["131338"],"description":"Formal definition of programming languages, including specification of syntax and semantics. Evolution of programming languages and language design principles. Structural organization, control structures, data structures and types, name visibility, binding times, parameter passing modes, subroutines, co-routines, and tasks. Functional programming, list processing, logic programming, object-oriented programming systems.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"131363":{"courseId":"131363","name":"ITCS 3120 - Introduction to Interactive Computer Graphics","links":["131338","131615"],"description":"Introduction to graphics hardware; raster algorithms; event-based programming; shader programming; anti-aliasing methods; matrix algebra for change of coordinates and 2D geometric transformations; 2D viewing transformation and clipping; 2D curves and 2D splines.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  and MATH 2164  or permission of department."}},"131364":{"courseId":"131364","name":"ITCS 4121 - Information Visualization","links":["131330"],"description":"Information visualization concepts, theories, design principles, popular techniques, evaluation methods, and information visualization applications.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 1213  or permission of instructor"}},"131365":{"courseId":"131365","name":"ITCS 4122 - Visual Analytics","links":["132539","132540","132541","132542","132543"],"description":"Introduces the new field of visual analytics, which provides tools for the interactive visual analysis of large and complex data sets in many application areas. Topics include: visual representation, perception, the analysis process, critical thinking, data transformations, color, interaction, and applications.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"STAT 1220 , STAT 1221 , STAT 1222 , STAT 2122 , or STAT 2223 , or approval of the instructor."}},"131366":{"courseId":"131366","name":"ITCS 4123 - Visualization and Visual Communication","links":["131338"],"description":"Understanding the relatively technical field of visualization from the point of view of visual communication; this course draws connections with photography, design, illustration, aesthetics, and art. Both technical and theoretical aspects of the various fields are covered, and the connections between them are investigated.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"131368":{"courseId":"131368","name":"ITCS 4141 - Computer Systems and Architecture: A Software Perspective","links":["131346"],"description":"Exploration of how software executes within a computer system, from operating system to hardware components, encompassing application for AI, real-time systems, such as robotics, and scientific computing. The course delves into the capability and performance aspects of the Central Processing Unit (CPU), Graphic Processing Unit (GPU), and computer memory system and interconnect architecture, along with how the operating systems manage them. The course includes a project focusing on developing or evaluating applications from system and architecture perspectives. Topics include: CPU/GPU memory and caching architecture; principles of locality of software programs; memory management, virtual memory and paging; hardware and software multithreading in CPU and GPU; process and thread scheduling and synchronization; interconnect of processing units, memory and external devices such as storage and accelerators; discrete memory system and offloading computation of accelerator architecture.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 3146  or permission of instructor","Cross-listed Course(s)":"ITCS 5141"}},"131369":{"courseId":"131369","name":"ITCS 4145 - Parallel Programming","links":["131346"],"description":"Parallelism is the driving force behind a wide range of applications, including database systems, web browsers, video games and Artificial Intelligence. This course introduces how to program such devices to get the most performance for your applications. Topics include: Dependency analysis; Parallel task decomposition; Shared memory parallel programming techniques; Performance analysis both theoretical and empirical; Concurrency control; Accelerator programming. S","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 3146  or permission of instructor"}},"131370":{"courseId":"131370","name":"ITCS 4151 - Intelligent Robotics","links":["131338","131615"],"description":"General introduction to spatial descriptions and transformations, and manipulator position and motion. More study on robot planning, programming, sensing, vision, and CAD/CAM.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  and MATH 2164 ."}},"131371":{"courseId":"131371","name":"ITCS 4152 - Introduction to Computer Vision","links":["132849"],"description":"Computer Vision is the study of enabling machines to &#8220;see&#8221; the visual world (i.e., understand images and videos). In this course, the students will learn fundamental computer vision algorithms and have opportunities to implement them. Further, we will be discussing more recent state-of-the-art visual representation learning approaches.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 3156"}},"131373":{"courseId":"131373","name":"ITCS 4161 - Intellectual Property Aspects of Computing","links":[],"description":"This course explores the broad field of intellectual property and the many aspects related to computing. Topics covered include software copyrights, software patents, trademarks and service marks, employment contracts, non-compete agreements, software licenses, software development contracts, preservation of digital evidence, protection of trade secrets, cyberspace law and the use of mediation in IP disputes.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Senior standing or permission of department."}},"131374":{"courseId":"131374","name":"ITCS 4180 - Mobile Application Development","links":["131338"],"description":"Mobile platforms are at the center of attention of users and organizations nowadays. Most organizations and businesses are rapidly migrating toward the cloud and need to provide a fast and easy mechanism for users to stay connected to their services. Mobile applications are the top trend nowadays given the high variety of new mobile devices and platforms such as Apple&#8217;s iOS and Google&#8217;s Android. In this course, students are introduced to the foundations of mobile development and its unique requirements and constraints. Students design and build a variety of mobile applications with a hands-on and project-based approach.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  or permission of department.","Cross-listed Course(s)":"<a href=\"preview_course_nopop.php?catoid=38&coid=131404\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131404&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131404&display_options[location]=tooltip&show\" id=\"tt8746\" target=\"_blank\">ITIS 4180</a><span style=\"display: none !important\">&#160;</span>."}},"131375":{"courseId":"131375","name":"ITCS 4230 - Introduction to Game Design and Development","links":["131338"],"description":"Basic concepts and techniques for electronic game design and development. Topics include: game history and genres, game design teams and processes, what makes a game fun, level and model design, game scripting and programming including computer graphics and animation, artificial intelligence, industry issues, and gender and games.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"131376":{"courseId":"131376","name":"ITCS 4231 - Advanced Game Design and Development","links":["131375"],"description":"Advanced concepts and techniques for electronic game design and development. A project-centered course where students explore complex gameplay and interactivity. Explores topics from the introductory course in more depth, such as: applying software engineering techniques to developing games, advanced game programming and scripting, networking, graphics, physics, audio, game data structures and algorithms, and artificial intelligence.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 4230 ."}},"131377":{"courseId":"131377","name":"ITCS 4232 - Game Design and Development Studio","links":["131349","131376"],"description":"Application of advanced concepts and techniques for electronic game design and development. Teams use engineering techniques to incorporate game programming and scripting, networking, graphics, physics, audio, game data structures and algorithms, and artificial intelligence into an electronic game. Individuals develop a complete portfolio of prior work and the course project.","attributes":{"Credit Hours":"(3)","Restriction(s)":"Senior standing or permission of department","Prerequisite(s)":"ITSC 3155  and ITCS 4231 , or permission of instructor"}},"131378":{"courseId":"131378","name":"ITCS 4235 - Game Engine Construction","links":["131363"],"description":"Introduction to principles and techniques behind modern computer and console game engines. Graphics Rendering Pipeline (transformations, lighting, shading); 2D/3D Texture Mapping; Image Based Rendering; Spatial Structures and Acceleration Algorithms; Level of Detail; Collision Detection, Culling and Intersection Methods; Vertex/Pixel Shaders; Pipeline Optimization; Rendering Hardware.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 3120  or permission of department."}},"131379":{"courseId":"131379","name":"ITCS 4236 - Artificial Intelligence for Computer Games","links":["131348"],"description":"Application of advanced concepts and techniques in artificial intelligence for electronic game design and development. An investigation of the artificial intelligence techniques necessary for an agent to act, or appear to act, intelligently in interactive virtual worlds. Topics include: uncertainty reasoning, machine learning, perception, knowledge representation, search, and planning. Emphasis is on implementation and experimentation with the goal of building robust intelligent agents in interactive entertainment domains. Elements of multi-agent collaboration and the use of cognitive architectures in interactive computer games are also discussed.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 3153 ."}},"132808":{"courseId":"132808","name":"ITCS 3162 - Introduction to Data Mining","links":["131338"],"description":"The key objectives of this course are two-fold: (1) to teach the basic concepts of data mining and (2) to provide extensive hands-on experience in applying the concepts to real-world business applications.  Topics include: Data Collection, Data Preprocessing, Data Exploration, Feature Engineering, Prediction Model, Clustering, Association Analysis, Graph/Network Analysis, Text Mining and Social Media Analysis, and Anomaly Detection.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"132837":{"courseId":"132837","name":"ITCS 3190 - Introduction to Cloud Computing for Data Analysis","links":["131338"],"description":"Introduction to the principles of cloud computing for data science applications.  Focuses on distributed computing, and algorithms for scalable data processing.  Topics include:  parallel processing, information retrieval, knowledge discovery in databases, web search, computational advertising, and scientific data analysis.  Students are expected to bring their laptops to class.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"132838":{"courseId":"132838","name":"ITCS 4124 - Advanced 3D Computer Graphics","links":["131363"],"description":"<span style=\"color:#000000;font-family:'tradegothic light', sans-serif;font-size:10pt;\">Introduction to 3D transforms, 3D viewing and visibility algorithms; local illumination models; texture mapping; 3D surfaces; advanced lighting models; geometric modeling techniques and procedural geometry methods.</span>","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 3120"}},"132839":{"courseId":"132839","name":"ITCS 4101 - Introduction to Natural Language Processing","links":["132849"],"description":"Natural Language Processing (NLP) is a branch of Artificial Intelligence (AI) concerned with developing computer systems that can analyze or generate natural language. This course introduces the main concepts and techniques underlying widely used NLP applications such as text classification, machine translation, question answering, or conversational AI. Topics include: Linguistic analysis tasks, including tokenization, word representations, syntactic and semantic parsing, and coreference resolution; string processing and regular expressions; machine learning models for text processing, including recurrent neural networks and Transformer; language models (LM); ethical considerations and limitations of NLP models.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 3156  (C or better)"}},"132840":{"courseId":"132840","name":"ITCS 4150 - Mobile Robotics","links":["131338","131615"],"description":"An introduction to basic concepts and techniques used in mobile robotics.  Topics include: mobile robot hardware, sensors and sensor data processing, planning and control, robot architectures, localization and mapping, path planning, and mobile robot applications.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  and MATH 2164","Cross-listed Course(s)":"ITCS 5150"}},"132841":{"courseId":"132841","name":"ITCS 4182 - Introduction to High-Performance Computing","links":["131369"],"description":"Fundamentals of parallel computer systems; throughput computing; memory hierarchies; computation/communication overlapping; mapping high level programs to low level components; leveraging accelerators; performance optimization; performance evaluation.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITCS 4145  or permission of department"}},"132849":{"courseId":"132849","name":"ITCS 3156 - Introduction to Machine Learning","links":["131338","132542","131615"],"description":"Introduction to the machine learning pipeline of data collection, feature creation, algorithms, and evaluation for classification and regression based on the fundamental foundations on Linear Algebra, Probability Theory, and Optimization. The course covers basic concepts, such as training, validation, overfitting, and error rates in addition to commonly used machine learning algorithms, such as linear regression, perceptrons, naive Bayes, logistic regression, neural networks, dimensionality reduction, clustering, and reinforcement learning.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214 , STAT 2122 , and MATH 2164"}},"132923":{"courseId":"132923","name":"ITCS 4165 - Computing Entrepreneurship","links":["131349"],"description":"Introduction to entrepreneurship and the specificities of creating a computing and technology driven small business.  An overview of how successful entrepreneurs learn about the marketplace, conduct financial analyses, and utilize management skills to develop entrepreneurial opportunities.  Other topics include: intellectual property protection, funding options, technology business planning, and start-up structure. ","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 3155"}},"133219":{"courseId":"133219","name":"ITCS 4158 - Blockchain System Architecture","links":["131338","131615"],"description":"Introduces students to Blockchain technology, which can be used to record and transfer digital assets, and the trustless system architecture underlying this technology. Employs a hands-on learning approach, using open-source platforms such as Hyperledger or Ethereum.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214  and MATH 2164","Cross-listed Course(s)":"ITCS 5158"}},"133429":{"courseId":"133429","name":"ITCS 4125 - Introduction to Virtual Reality and Augmented Reality","links":["131338"],"description":"Introduces the basic technologies of virtual and augmented reality (VR/AR). Students learn the diverse topics of VR/AR, learn and practice core skills to develop basic VR/AR programs, and learn example VR/AR applications.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214"}},"133520":{"courseId":"133520","name":"ITCS 4114 - Real World Algorithms","links":["131338","131337"],"description":"Basic and advanced algorithms foundational to computer science. In particular, the course will tie each algorithm with a real-world problem or application, thereby illustrating its relevance and importance in solving complex and challenging problems. Algorithms will span the topics of sorting, searching, geometric  and graph algorithms. Algorithm implementation and testing will involve datasets from a variety of application domains.","attributes":{"Credit Hours":"(3)","Prerequisite(s)":"ITSC 2214 , ITSC 2175"}}}
+{
+    "131326": {
+        "courseId": "131326",
+        "name": "ITCS 1101 - Introduction to Computer Concepts",
+        "links": [
+            "131605",
+            "133442",
+            "131607",
+            "131609",
+            "131612"
+        ],
+        "description": "Introductory course that gives an overview of computer hardware and software. Primary emphasis is on productivity software (word processing, spreadsheet, and graphical presentation). These applications are taught through a series of projects/assignments. Aspects of Internet research are also covered.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Pre- or Corequisite(s)": "MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1241"
+        }
+    },
+    "131327": {
+        "courseId": "131327",
+        "name": "ITCS 1102 - Advanced Internet Concepts",
+        "links": [],
+        "description": "An advanced study of the Internet environment designed for any student who is familiar with office productivity tools and a user of Internet technologies; it addresses advanced concepts of computer literacy.  Topics include: concepts of website design and how to evaluate websites; proper use of synchronous and asynchronous communication tools (e.g., chat, email, IM); issues of copyright and cyber-ethics; using the Internet to do research; and publishing via the Internet.  Other topics may be added to keep the content current and relevant.  Students complete extensive Internet-oriented projects to demonstrate mastery of the skills discussed in class. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "May not be taken for credit by students with a major or minor in the College of Computing and Informatics."
+        }
+    },
+    "131331": {
+        "courseId": "131331",
+        "name": "ITCS 1301 - Introduction to the Financial Services Industry",
+        "links": [],
+        "description": "An overview of the financial services industry, including such areas as the industry components; regulatory considerations and their impact; and relations with other institutions.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131388\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131388&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131388&display_options[location]=tooltip&show\" id=\"tt83\" target=\"_blank\">ITIS 1301</a><span style=\"display: none !important\">&#160;</span>."
+        }
+    },
+    "131333": {
+        "courseId": "131333",
+        "name": "ITCS 1610 - Computing Applications Seminar",
+        "links": [
+            "131605",
+            "133442",
+            "131607",
+            "131609",
+            "131613"
+        ],
+        "description": "A service-learning seminar course designed to emphasize the social relevance of computing. The course aims to inform non-computing specialists of computing technologies, research, and career opportunities. Seminar topics are intended to enhance disciplinary knowledge and to develop leadership skills related to using computing knowledge and skills in service to society. Emphasis placed on the basic concepts of leadership theory and its application within the computing discipline on an individual, group, and societal level. Students participate in team-based computing service-learning projects in the community, in conjunction with computing majors taking <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt5670\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span>. Student performance evaluation considers individual homework assignments, participation in team projects, and class participation.",
+        "attributes": {
+            "Credit Hours": "(3) (SL)",
+            "Prerequisite(s)": "MATH 1100 , MATH 1101 , MATH 1103 , MATH 1120 , or MATH 1242 ."
+        }
+    },
+    "131334": {
+        "courseId": "131334",
+        "name": "ITCS 1712 - Introduction to Computer Science (Honors)",
+        "links": [
+            "131609",
+            "131612",
+            "131334"
+        ],
+        "description": "Introduction to algorithmic problem solving using high level programming languages. Basic programming concepts (decision making, iteration, subroutines) and data types (atomic and aggregates) will be taught in C++ and Java. Advanced concepts such as pointers, references, and polymorphism will be explored.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Pre- or Corequisite(s)": "MATH 1120  or MATH 1241 ; restricted to CCI Honors students, or an acceptable score on the ITCS 1712  placement test."
+        }
+    },
+    "131335": {
+        "courseId": "131335",
+        "name": "ITCS 2050 - Topics in Computer Science",
+        "links": [],
+        "description": "Topics in computer science selected to supplement the regular course offerings at the 2000 level. ",
+        "attributes": {
+            "Credit Hours": "(1 to 3)",
+            "Restriction(s)": "Permission of department.",
+            "Repeatability": "May be repeated for credit with permission of department.  Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters."
+        }
+    },
+    "131336": {
+        "courseId": "131336",
+        "name": "ITCS 2116 - C Programming",
+        "links": [],
+        "description": "A study of the programming language C. Data types, operators, functions, program structure, file I/O, storage classes, exceptions, concurrent programming, and the preprocessor.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Knowledge of any other computer programming language or permission of department."
+        }
+    },
+    "131339": {
+        "courseId": "131339",
+        "name": "ITCS 2215 - Design and Analysis of Algorithms",
+        "links": [
+            "131609",
+            "131612",
+            "131337",
+            "131611",
+            "131338"
+        ],
+        "description": "Introduction to the design and analysis of algorithms. Design techniques: divide-and-conquer, greedy approach, dynamic programming. Algorithm analysis: asymptotic notation, recurrence relation, time space complexity and tradeoffs. Study of sorting, searching, hashing, and graph algorithms.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "MATH 1120  or MATH 1241 ; ITSC 2175  or MATH 2165 ; and ITSC 2214 ."
+        }
+    },
+    "131340": {
+        "courseId": "131340",
+        "name": "ITCS 2231 - Introduction to Business Programming",
+        "links": [
+            "131289"
+        ],
+        "description": "The examination of business problems, the extraction of the logic and business rules, and the relationship between business logic, programming constructs and technologies for decision support.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Pre- or Corequisite(s)": "INFO 2130  or permission of department."
+        }
+    },
+    "131341": {
+        "courseId": "131341",
+        "name": "ITCS 2301 - Financial Services Computing Environment",
+        "links": [
+            "131331",
+            "131388"
+        ],
+        "description": "The objective is for the student to gain insights on several key components in financial computing environments and the enabling technologies.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 1301  or ITIS 1301 ."
+        }
+    },
+    "131342": {
+        "courseId": "131342",
+        "name": "ITCS 3050 - Topics in Computer Science",
+        "links": [],
+        "description": "Topics in computer science selected to supplement the regular course offerings at the 3000 level.",
+        "attributes": {
+            "Credit Hours": "(1 to 3)",
+            "Restriction(s)": "Permission of department.",
+            "Repeatability": "May be repeated for credit with permission of department.  Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters."
+        }
+    },
+    "131343": {
+        "courseId": "131343",
+        "name": "ITCS 3112 - Design and Implementation of Object-Oriented Systems",
+        "links": [
+            "131338"
+        ],
+        "description": "In-depth exploration of object-oriented programming and system development. Topics include: evolution of object-oriented methodology; concept of the object-oriented approach; object-oriented programming languages; object-oriented analysis and design; the design of software for reuse; and incremental software development.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "131344": {
+        "courseId": "131344",
+        "name": "ITCS 3134 - Digital Image Processing",
+        "links": [
+            "131338",
+            "131613",
+            "131615"
+        ],
+        "description": "Overview of fundamentals of image acquisition, representation, enhancement, segmentation, reconstruction, analysis and recognition. Image generation, viewing and perception; image transformations using the Fourier transform; spatial operations and filtering (spatial and frequency domain); image coding; lossless and lossy compression; boundary and region based segmentation; thresholding and classification; boundary and regional image descriptors; matching and neural networks; shape numbers.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214 , MATH 1242 , and MATH 2164  with grades of C or above."
+        }
+    },
+    "131345": {
+        "courseId": "131345",
+        "name": "ITCS 3143 - Operating Systems",
+        "links": [
+            "131338"
+        ],
+        "description": "Introduction to multiprogramming operating systems. Process synchronization and management of memory, devices, and files; performance evaluation.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  or permission of department."
+        }
+    },
+    "131347": {
+        "courseId": "131347",
+        "name": "ITCS 3152 - Symbolic Programming",
+        "links": [
+            "131338"
+        ],
+        "description": "Basic concepts of symbolic programming including selected topics in artificial intelligence, heuristic searching, symbolic algebra, language parsing, and theorem proving.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214 ."
+        }
+    },
+    "131348": {
+        "courseId": "131348",
+        "name": "ITCS 3153 - Introduction to Artificial Intelligence",
+        "links": [
+            "132542",
+            "131615",
+            "131338"
+        ],
+        "description": "Basic AI-related math fundamentals and AI concepts. Topics include: probability theory and information theory; basic search/problem-solving methods, such as uninformed search, informed search, adversarial search, local search, and constraint satisfaction problem; knowledge representation and reasoning, like propositional logic and inference; probabilistic reasoning such as Bayesian networks, sampling, and decision networks; sequential decision, such as Markov decision processes and reinforcement learning; and machine learning.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "STAT 2122 , MATH 2164 , and  ITSC 2214 , or permission of department."
+        }
+    },
+    "131350": {
+        "courseId": "131350",
+        "name": "ITCS 3160 - Database Design and Implementation",
+        "links": [
+            "131330"
+        ],
+        "description": "Logical and physical database organization, data models, design issues, and secondary storage considerations. Emphasis on actual participation in the design and implementation of databases.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1213  or permission of department."
+        }
+    },
+    "131351": {
+        "courseId": "131351",
+        "name": "ITCS 3166 - Introduction to Computer Networks",
+        "links": [
+            "131330"
+        ],
+        "description": "An in-depth exploration of the principles and technologies that underpin contemporary computer networks and their vital part in today&#8217;s IT landscape for seamless communication, data sharing, and the growth of emerging technologies. Key elements include: Study of packet communications; Analysis of OSI layered architectures; Study of flow and congestion control protocols at the transport layer; Investigation of routing protocols at the network layer. Students will examine the fundamental concepts and evolving aspects of network technology, including Software-Defined Networking, the provision of AI as a service, the Internet of Things (IoT), and Edge-Computing Networks, along with their practical applications in shaping smart futures (smart cities, smart transportation, smart retail, smart healthcare, and smart manufacturing). Topics Include: Basics of Internet, Network Layer Protocols, Transport Layer Protocols, Application Layer Protocols, Wireless Networking, Emerging Topics on Smart Networked System. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1213  or permission of department."
+        }
+    },
+    "131354": {
+        "courseId": "131354",
+        "name": "ITCS 3211 - Computing Leaders Team Projects",
+        "links": [
+            "131358",
+            "131333"
+        ],
+        "description": "A service-learning course that builds upon the leadership concepts from <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt4636\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> through focused hands-on experience with service-learning projects. Students work in teams to apply computing technologies, knowledge and skills to serve community needs.",
+        "attributes": {
+            "Credit Hours": "(1) (SL)",
+            "Prerequisite(s)": "ITCS 3610  or ITCS 1610 .",
+            "Repeatability": "May be repeated for elective credit."
+        }
+    },
+    "131355": {
+        "courseId": "131355",
+        "name": "ITCS 3212 - Computing Leaders Team Leaders",
+        "links": [
+            "131358",
+            "131333"
+        ],
+        "description": "A service-learning course that builds upon the leadership concepts from <a href=\"preview_course_nopop.php?catoid=38&coid=131358\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131358&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131358&display_options[location]=tooltip&show\" id=\"tt191\" target=\"_blank\">ITCS 3610</a><span style=\"display: none !important\">&#160;</span> through focused hands-on experience with service-learning projects. Companion course to <a href=\"preview_course_nopop.php?catoid=38&coid=131354\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131354&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131354&display_options[location]=tooltip&show\" id=\"tt4974\" target=\"_blank\">ITCS 3211</a><span style=\"display: none !important\">&#160;</span>; students in this course serve as team leaders for the team projects undertaken by students in <a href=\"preview_course_nopop.php?catoid=38&coid=131354\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131354&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131354&display_options[location]=tooltip&show\" id=\"tt1917\" target=\"_blank\">ITCS 3211</a><span style=\"display: none !important\">&#160;</span>. Students lead teams to apply computing technologies, knowledge, and skills to serve community needs.",
+        "attributes": {
+            "Credit Hours": "(1) (SL)",
+            "Prerequisite(s)": "ITCS 3610  or ITCS 1610 .",
+            "Repeatability": "May be repeated for elective credit."
+        }
+    },
+    "131356": {
+        "courseId": "131356",
+        "name": "ITCS 3216 - Introduction to Cognitive Science",
+        "links": [
+            "132209"
+        ],
+        "description": "Interdisciplinary introduction to the science of the mind. Broad coverage of such topics as philosophy of mind, human memory processes, reasoning and problem solving, artificial intelligence, language processing (human and machine), neural structures and processes, and vision.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "PSYC 1101  with grade of C or above, or permission of department.",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=133125\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=133125&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=133125&display_options[location]=tooltip&show\" id=\"tt8086\" target=\"_blank\">ITIS 3216</a><span style=\"display: none !important\">&#160;</span> and <a href=\"preview_course_nopop.php?catoid=38&coid=132245\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=132245&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=132245&display_options[location]=tooltip&show\" id=\"tt6184\" target=\"_blank\">PSYC 3216</a><span style=\"display: none !important\">&#160;</span>"
+        }
+    },
+    "131358": {
+        "courseId": "131358",
+        "name": "ITCS 3610 - Computing Leaders Seminar",
+        "links": [],
+        "description": "A service-learning seminar course. Seminar topics are intended to enhance disciplinary knowledge and skills (computing technologies, research, careers) and to develop leadership skills by using computing knowledge and skills in service to society (service and civic engagement). Emphasis placed on the basic concepts of leadership theory and its application within the computing discipline on an individual, group, and societal level. Students participate in team-based computing service-learning projects in the community. Student performance evaluation considers individual homework assignments, participation in team projects, class participation, and feedback from those served.",
+        "attributes": {
+            "Credit Hours": "(3) (SL)",
+            "Restriction(s)": "CCI major."
+        }
+    },
+    "131361": {
+        "courseId": "131361",
+        "name": "ITCS 4010 - Topics in Computer Science",
+        "links": [],
+        "description": "Topics in computer science selected to supplement the regular course offerings at the 4000 level.",
+        "attributes": {
+            "Credit Hours": "(1 to 3)",
+            "Restriction(s)": "Permission of department.",
+            "Repeatability": "May be repeated for credit with permission of department.   Additionally, students may register for multiple sections of the course with different topics in the same semester or in different semesters."
+        }
+    },
+    "131362": {
+        "courseId": "131362",
+        "name": "ITCS 4102 - Programming Languages",
+        "links": [
+            "131338"
+        ],
+        "description": "Formal definition of programming languages, including specification of syntax and semantics. Evolution of programming languages and language design principles. Structural organization, control structures, data structures and types, name visibility, binding times, parameter passing modes, subroutines, co-routines, and tasks. Functional programming, list processing, logic programming, object-oriented programming systems.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "131363": {
+        "courseId": "131363",
+        "name": "ITCS 3120 - Introduction to Interactive Computer Graphics",
+        "links": [
+            "131338",
+            "131615"
+        ],
+        "description": "Introduction to graphics hardware; raster algorithms; event-based programming; shader programming; anti-aliasing methods; matrix algebra for change of coordinates and 2D geometric transformations; 2D viewing transformation and clipping; 2D curves and 2D splines.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  and MATH 2164  or permission of department."
+        }
+    },
+    "131364": {
+        "courseId": "131364",
+        "name": "ITCS 4121 - Information Visualization",
+        "links": [
+            "131330"
+        ],
+        "description": "Information visualization concepts, theories, design principles, popular techniques, evaluation methods, and information visualization applications.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1213  or permission of instructor"
+        }
+    },
+    "131365": {
+        "courseId": "131365",
+        "name": "ITCS 4122 - Visual Analytics",
+        "links": [
+            "132539",
+            "132540",
+            "132541",
+            "132542",
+            "132543"
+        ],
+        "description": "Introduces the new field of visual analytics, which provides tools for the interactive visual analysis of large and complex data sets in many application areas. Topics include: visual representation, perception, the analysis process, critical thinking, data transformations, color, interaction, and applications.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "STAT 1220 , STAT 1221 , STAT 1222 , STAT 2122 , or STAT 2223 , or approval of the instructor."
+        }
+    },
+    "131366": {
+        "courseId": "131366",
+        "name": "ITCS 4123 - Visualization and Visual Communication",
+        "links": [
+            "131338"
+        ],
+        "description": "Understanding the relatively technical field of visualization from the point of view of visual communication; this course draws connections with photography, design, illustration, aesthetics, and art. Both technical and theoretical aspects of the various fields are covered, and the connections between them are investigated.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "131368": {
+        "courseId": "131368",
+        "name": "ITCS 4141 - Computer Systems and Architecture: A Software Perspective",
+        "links": [
+            "131346"
+        ],
+        "description": "Exploration of how software executes within a computer system, from operating system to hardware components, encompassing application for AI, real-time systems, such as robotics, and scientific computing. The course delves into the capability and performance aspects of the Central Processing Unit (CPU), Graphic Processing Unit (GPU), and computer memory system and interconnect architecture, along with how the operating systems manage them. The course includes a project focusing on developing or evaluating applications from system and architecture perspectives. Topics include: CPU/GPU memory and caching architecture; principles of locality of software programs; memory management, virtual memory and paging; hardware and software multithreading in CPU and GPU; process and thread scheduling and synchronization; interconnect of processing units, memory and external devices such as storage and accelerators; discrete memory system and offloading computation of accelerator architecture.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 3146  or permission of instructor",
+            "Cross-listed Course(s)": "ITCS 5141"
+        }
+    },
+    "131369": {
+        "courseId": "131369",
+        "name": "ITCS 4145 - Parallel Programming",
+        "links": [
+            "131346"
+        ],
+        "description": "Parallelism is the driving force behind a wide range of applications, including database systems, web browsers, video games and Artificial Intelligence. This course introduces how to program such devices to get the most performance for your applications. Topics include: Dependency analysis; Parallel task decomposition; Shared memory parallel programming techniques; Performance analysis both theoretical and empirical; Concurrency control; Accelerator programming. S",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 3146  or permission of instructor"
+        }
+    },
+    "131370": {
+        "courseId": "131370",
+        "name": "ITCS 4151 - Intelligent Robotics",
+        "links": [
+            "131338",
+            "131615"
+        ],
+        "description": "General introduction to spatial descriptions and transformations, and manipulator position and motion. More study on robot planning, programming, sensing, vision, and CAD/CAM.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  and MATH 2164 ."
+        }
+    },
+    "131371": {
+        "courseId": "131371",
+        "name": "ITCS 4152 - Introduction to Computer Vision",
+        "links": [
+            "132849"
+        ],
+        "description": "Computer Vision is the study of enabling machines to &#8220;see&#8221; the visual world (i.e., understand images and videos). In this course, the students will learn fundamental computer vision algorithms and have opportunities to implement them. Further, we will be discussing more recent state-of-the-art visual representation learning approaches.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3156"
+        }
+    },
+    "131373": {
+        "courseId": "131373",
+        "name": "ITCS 4161 - Intellectual Property Aspects of Computing",
+        "links": [],
+        "description": "This course explores the broad field of intellectual property and the many aspects related to computing. Topics covered include software copyrights, software patents, trademarks and service marks, employment contracts, non-compete agreements, software licenses, software development contracts, preservation of digital evidence, protection of trade secrets, cyberspace law and the use of mediation in IP disputes.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Senior standing or permission of department."
+        }
+    },
+    "131374": {
+        "courseId": "131374",
+        "name": "ITCS 4180 - Mobile Application Development",
+        "links": [
+            "131338"
+        ],
+        "description": "Mobile platforms are at the center of attention of users and organizations nowadays. Most organizations and businesses are rapidly migrating toward the cloud and need to provide a fast and easy mechanism for users to stay connected to their services. Mobile applications are the top trend nowadays given the high variety of new mobile devices and platforms such as Apple&#8217;s iOS and Google&#8217;s Android. In this course, students are introduced to the foundations of mobile development and its unique requirements and constraints. Students design and build a variety of mobile applications with a hands-on and project-based approach.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  or permission of department.",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131404\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131404&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131404&display_options[location]=tooltip&show\" id=\"tt5272\" target=\"_blank\">ITIS 4180</a><span style=\"display: none !important\">&#160;</span>."
+        }
+    },
+    "131375": {
+        "courseId": "131375",
+        "name": "ITCS 4230 - Introduction to Game Design and Development",
+        "links": [
+            "131338"
+        ],
+        "description": "Basic concepts and techniques for electronic game design and development. Topics include: game history and genres, game design teams and processes, what makes a game fun, level and model design, game scripting and programming including computer graphics and animation, artificial intelligence, industry issues, and gender and games.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "131376": {
+        "courseId": "131376",
+        "name": "ITCS 4231 - Advanced Game Design and Development",
+        "links": [
+            "131375"
+        ],
+        "description": "Advanced concepts and techniques for electronic game design and development. A project-centered course where students explore complex gameplay and interactivity. Explores topics from the introductory course in more depth, such as: applying software engineering techniques to developing games, advanced game programming and scripting, networking, graphics, physics, audio, game data structures and algorithms, and artificial intelligence.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 4230 ."
+        }
+    },
+    "131377": {
+        "courseId": "131377",
+        "name": "ITCS 4232 - Game Design and Development Studio",
+        "links": [
+            "131349",
+            "131376"
+        ],
+        "description": "Application of advanced concepts and techniques for electronic game design and development. Teams use engineering techniques to incorporate game programming and scripting, networking, graphics, physics, audio, game data structures and algorithms, and artificial intelligence into an electronic game. Individuals develop a complete portfolio of prior work and the course project.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Senior standing or permission of department",
+            "Prerequisite(s)": "ITSC 3155  and ITCS 4231 , or permission of instructor"
+        }
+    },
+    "131378": {
+        "courseId": "131378",
+        "name": "ITCS 4235 - Game Engine Construction",
+        "links": [
+            "131363"
+        ],
+        "description": "Introduction to principles and techniques behind modern computer and console game engines. Graphics Rendering Pipeline (transformations, lighting, shading); 2D/3D Texture Mapping; Image Based Rendering; Spatial Structures and Acceleration Algorithms; Level of Detail; Collision Detection, Culling and Intersection Methods; Vertex/Pixel Shaders; Pipeline Optimization; Rendering Hardware.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3120  or permission of department."
+        }
+    },
+    "131379": {
+        "courseId": "131379",
+        "name": "ITCS 4236 - Artificial Intelligence for Computer Games",
+        "links": [
+            "131348"
+        ],
+        "description": "Application of advanced concepts and techniques in artificial intelligence for electronic game design and development. An investigation of the artificial intelligence techniques necessary for an agent to act, or appear to act, intelligently in interactive virtual worlds. Topics include: uncertainty reasoning, machine learning, perception, knowledge representation, search, and planning. Emphasis is on implementation and experimentation with the goal of building robust intelligent agents in interactive entertainment domains. Elements of multi-agent collaboration and the use of cognitive architectures in interactive computer games are also discussed.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3153 ."
+        }
+    },
+    "132808": {
+        "courseId": "132808",
+        "name": "ITCS 3162 - Introduction to Data Mining",
+        "links": [
+            "131338"
+        ],
+        "description": "The key objectives of this course are two-fold: (1) to teach the basic concepts of data mining and (2) to provide extensive hands-on experience in applying the concepts to real-world business applications.  Topics include: Data Collection, Data Preprocessing, Data Exploration, Feature Engineering, Prediction Model, Clustering, Association Analysis, Graph/Network Analysis, Text Mining and Social Media Analysis, and Anomaly Detection.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "132837": {
+        "courseId": "132837",
+        "name": "ITCS 3190 - Introduction to Cloud Computing for Data Analysis",
+        "links": [
+            "131338"
+        ],
+        "description": "Introduction to the principles of cloud computing for data science applications.  Focuses on distributed computing, and algorithms for scalable data processing.  Topics include:  parallel processing, information retrieval, knowledge discovery in databases, web search, computational advertising, and scientific data analysis.  Students are expected to bring their laptops to class.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "132838": {
+        "courseId": "132838",
+        "name": "ITCS 4124 - Advanced 3D Computer Graphics",
+        "links": [
+            "131363"
+        ],
+        "description": "<span style=\"color:#000000;font-family:'tradegothic light', sans-serif;font-size:10pt;\">Introduction to 3D transforms, 3D viewing and visibility algorithms; local illumination models; texture mapping; 3D surfaces; advanced lighting models; geometric modeling techniques and procedural geometry methods.</span>",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3120"
+        }
+    },
+    "132839": {
+        "courseId": "132839",
+        "name": "ITCS 4101 - Introduction to Natural Language Processing",
+        "links": [
+            "132849"
+        ],
+        "description": "Natural Language Processing (NLP) is a branch of Artificial Intelligence (AI) concerned with developing computer systems that can analyze or generate natural language. This course introduces the main concepts and techniques underlying widely used NLP applications such as text classification, machine translation, question answering, or conversational AI. Topics include: Linguistic analysis tasks, including tokenization, word representations, syntactic and semantic parsing, and coreference resolution; string processing and regular expressions; machine learning models for text processing, including recurrent neural networks and Transformer; language models (LM); ethical considerations and limitations of NLP models.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3156  (C or better)"
+        }
+    },
+    "132840": {
+        "courseId": "132840",
+        "name": "ITCS 4150 - Mobile Robotics",
+        "links": [
+            "131338",
+            "131615"
+        ],
+        "description": "An introduction to basic concepts and techniques used in mobile robotics.  Topics include: mobile robot hardware, sensors and sensor data processing, planning and control, robot architectures, localization and mapping, path planning, and mobile robot applications.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  and MATH 2164",
+            "Cross-listed Course(s)": "ITCS 5150"
+        }
+    },
+    "132841": {
+        "courseId": "132841",
+        "name": "ITCS 4182 - Introduction to High-Performance Computing",
+        "links": [
+            "131369"
+        ],
+        "description": "Fundamentals of parallel computer systems; throughput computing; memory hierarchies; computation/communication overlapping; mapping high level programs to low level components; leveraging accelerators; performance optimization; performance evaluation.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 4145  or permission of department"
+        }
+    },
+    "132849": {
+        "courseId": "132849",
+        "name": "ITCS 3156 - Introduction to Machine Learning",
+        "links": [
+            "131338",
+            "132542",
+            "131615"
+        ],
+        "description": "Introduction to the machine learning pipeline of data collection, feature creation, algorithms, and evaluation for classification and regression based on the fundamental foundations on Linear Algebra, Probability Theory, and Optimization. The course covers basic concepts, such as training, validation, overfitting, and error rates in addition to commonly used machine learning algorithms, such as linear regression, perceptrons, naive Bayes, logistic regression, neural networks, dimensionality reduction, clustering, and reinforcement learning.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214 , STAT 2122 , and MATH 2164"
+        }
+    },
+    "132923": {
+        "courseId": "132923",
+        "name": "ITCS 4165 - Computing Entrepreneurship",
+        "links": [
+            "131349"
+        ],
+        "description": "Introduction to entrepreneurship and the specificities of creating a computing and technology driven small business.  An overview of how successful entrepreneurs learn about the marketplace, conduct financial analyses, and utilize management skills to develop entrepreneurial opportunities.  Other topics include: intellectual property protection, funding options, technology business planning, and start-up structure. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 3155"
+        }
+    },
+    "133219": {
+        "courseId": "133219",
+        "name": "ITCS 4158 - Blockchain System Architecture",
+        "links": [
+            "131338",
+            "131615"
+        ],
+        "description": "Introduces students to Blockchain technology, which can be used to record and transfer digital assets, and the trustless system architecture underlying this technology. Employs a hands-on learning approach, using open-source platforms such as Hyperledger or Ethereum.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  and MATH 2164",
+            "Cross-listed Course(s)": "ITCS 5158"
+        }
+    },
+    "133429": {
+        "courseId": "133429",
+        "name": "ITCS 4125 - Introduction to Virtual Reality and Augmented Reality",
+        "links": [
+            "131338"
+        ],
+        "description": "Introduces the basic technologies of virtual and augmented reality (VR/AR). Students learn the diverse topics of VR/AR, learn and practice core skills to develop basic VR/AR programs, and learn example VR/AR applications.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "133520": {
+        "courseId": "133520",
+        "name": "ITCS 4114 - Real World Algorithms",
+        "links": [
+            "131338",
+            "131337"
+        ],
+        "description": "Basic and advanced algorithms foundational to computer science. In particular, the course will tie each algorithm with a real-world problem or application, thereby illustrating its relevance and importance in solving complex and challenging problems. Algorithms will span the topics of sorting, searching, geometric  and graph algorithms. Algorithm implementation and testing will involve datasets from a variety of application domains.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214 , ITSC 2175"
+        }
+    }
+}

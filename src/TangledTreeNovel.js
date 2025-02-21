@@ -27,6 +27,7 @@
 import * as d3 from 'd3'
 import * as React from 'react'
 import _ from 'lodash'
+import { ReactSVGPanZoom, TOOL_NONE, fitSelection, zoomOnViewerCenter, fitToViewer, Tool, Value, TOOL_PAN } from 'react-svg-pan-zoom';
 
 export const constructTangleLayout = (levels, {
   nodeWidth = 70 * 5,
@@ -60,14 +61,14 @@ export const constructTangleLayout = (levels, {
   for (const [i, level] of levels.entries()) {
     const index = {};
     //For each node, if it has parents, create a bundle
-    level.forEach(n => {
-      if (n.parents.length == 0) {
+    level.forEach(childNode => {
+      if (childNode.parents.length == 0) {
         return;
       }
 
-      n.parents.forEach(parentNode => {
+      childNode.parents.forEach(parentNode => {
         //The bundle id is made by concatenating all the parent ids
-        const bundleId = n.id + ' <- ' + parentNode
+        const bundleId = childNode.id + ' <- ' + parentNode.id
         /*.map(d => {
           if (d == undefined) {
             console.log(`d is undefined; n=${n.id}`)
@@ -79,7 +80,7 @@ export const constructTangleLayout = (levels, {
         if (bundleId in index) {
           //If an exact matching bundle id exists, add the nodes parents to the existing bundle parents list
           //TODO: It seems like the node parents should all already be present in the bundle if it already exists and is named after them
-          index[bundleId].parents = index[bundleId].parents.concat(n.parents);
+          index[bundleId].parents = index[bundleId].parents.concat(childNode.parents);
         } else {
           //Otherwise, create the bundle
           //Span = Distance between currentNodeLevel and min(parent levels)
@@ -88,12 +89,13 @@ export const constructTangleLayout = (levels, {
             id: bundleId,
             parents: [parentNode],
             level: i,
-            span: i - parentNode.leveld3.min(n.parents, p => p.level),
-            childNodeId: n.id
+            span: i - parentNode.level,
+            childNodeId: childNode.id
           };
         }
 
-        n.bundle = index[bundleId];
+        if (childNode.incomingBundles === undefined) childNode.incomingBundles = {}
+        childNode.incomingBundles[parentNode.id] = index[bundleId];
       })
     });
     level.bundles = Object.keys(index).map(key => index[key]);
@@ -106,7 +108,7 @@ export const constructTangleLayout = (levels, {
     for (const parent of node.parents) {
       links.push({
         source: node,
-        bundle: node.bundle,
+        bundle: node.incomingBundles[parent.id],
         target: parent
       });
     }
@@ -202,7 +204,15 @@ export const constructTangleLayout = (levels, {
 
   //SOURCE is the child, TARGET is the parent
 
+  console.log("Generating link coordinates")
   for (const link of links) {
+    if (link.target.bundlesIndex[link.bundle.id] === undefined) {
+      console.log("Detected Error Condition")
+      console.log("Link source:", link.source.id, "; target: ", link.target.id, "; bundle id:", link.bundle.id)
+      console.log("Target Bundles Index Keys:", Object.keys(link.target.bundlesIndex))
+      console.log("Target Bundles Index Values:", Object.values(link.target.bundlesIndex))
+    }
+
     link.x_target = link.target.x;
     link.y_target = link.target.y +
       link.target.bundlesIndex[link.bundle.id].i * metroD -
@@ -226,6 +236,7 @@ export const constructTangleLayout = (levels, {
     }
   }
 
+  console.log("Generating link secondary visual parameters")
   for (const link of links) {
     link.y_target = link.target.y +
       link.target.bundlesIndex[link.bundle.id].i * metroD -
@@ -239,6 +250,7 @@ export const constructTangleLayout = (levels, {
     link.c2 = c;
   }
 
+  console.log("Assembling layout data")
   const layout = {
     width: d3.max(nodes, node => node.x) + nodeWidth + 2 * padding,
     height: d3.max(nodes, node => node.y) + nodeHeight / 2 + 2 * padding,
@@ -249,6 +261,7 @@ export const constructTangleLayout = (levels, {
     metroD
   };
 
+  console.log("Done!")
   return {
     levels,
     nodes,
@@ -259,14 +272,74 @@ export const constructTangleLayout = (levels, {
   };
 }
 
-export const tangledTreeVisualization = (data, {
-  color = d3.scaleOrdinal(d3.schemeDark2),
-  backgroundColor = 'white'
-} = {}) => {
-  const tangleLayout = constructTangleLayout(_.cloneDeep(data), {
-    color: color,
-    backgroundColor: backgroundColor
-  });
+export const TangledTreeVisualization = ({ graphData, rawCourseData, options = {
+  color: d3.scaleOrdinal(d3.schemeDark2),
+  backgroundColor: 'white'
+} }) => {
+  const [tangleLayout, setTangleLayout] = React.useState()
+
+  React.useEffect(() => {
+    //Reset controls in case there was a previous graph open
+    setHoveredNodeId(undefined)
+    mouseStillOverHoveredNode.current = false
+    lctrlPressed.current = false
+    currentSelectionLocked.current = false
+
+    const tangleLayoutData = constructTangleLayout(_.cloneDeep(graphData), {
+      color: options.color,
+      backgroundColor: options.backgroundColor
+    });
+    setTangleLayout(tangleLayoutData)
+    console.log("Done generating graph visual data!")
+  }, [graphData])
+
+  const Viewer = React.useRef(null);
+  React.useEffect(() => {
+    setTimeout(() => {
+      Viewer.current?.fitToViewer();
+    }, 0)
+  }, [tangleLayout]);
+
+  const [tool, setTool] = React.useState(TOOL_NONE)
+  const [value, setValue] = React.useState({})
+
+  const [hoveredNodeId, setHoveredNodeId] = React.useState()
+
+  const mouseStillOverHoveredNode = React.useRef(false)
+  const currentSelectionLocked = React.useRef(false)
+  const lctrlPressed = React.useRef(false)
+
+  function handleKeyDown(event) {
+    if (event.key == 'Escape') {
+      setTool(TOOL_NONE)
+    }
+    else if (event.key.toUpperCase() == 'M') {
+      setTool(prevTool => prevTool == TOOL_PAN ? TOOL_NONE : TOOL_PAN)
+    }
+    else if (event.key.toUpperCase() == 'R') {
+      Viewer.current?.fitToViewer()
+    }
+    else if (event.key == 'Control') {
+      lctrlPressed.current = true
+    }
+  }
+
+  function handleKeyUp(event) {
+    if (event.key == 'Control') {
+      lctrlPressed.current = false
+    }
+  }
+
+  React.useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
+  if (!tangleLayout) return;
 
   const uniqueBundleParents = new Set([]);
   tangleLayout.bundles.forEach(bundle => {
@@ -275,14 +348,75 @@ export const tangledTreeVisualization = (data, {
     })
   })
 
+  function getInfoUrl(node) {
+    const courseData = rawCourseData.values().find(data => data.name == node.id)
+    return `https://catalog.charlotte.edu/preview_course.php?catoid=${courseData.catalogId}&coid=${courseData.courseId}`
+  }
+
+  function onHoverNode(node) {
+    if (currentSelectionLocked.current) return
+    setHoveredNodeId(node.id)
+    mouseStillOverHoveredNode.current = true
+  }
+
+  function onStopHoveringNode() {
+    //setHoveredNodeId('')    
+    mouseStillOverHoveredNode.current = false
+  }
+
+  function onClick_node(node) {
+    if (lctrlPressed.current) {
+      const url = getInfoUrl(node)
+      window.open(url, url);
+    }
+    else {
+      currentSelectionLocked.current = true
+    }
+  }
+
+  const nodeIdsParentOfSelected = []
+  const nodeIdsChildOfSelected = []
+  let selectedNode
+  if (hoveredNodeId) {
+    selectedNode = tangleLayout.nodes.find(node => node.id == hoveredNodeId)
+    selectedNode.bundles.forEach(bundlesArr => {
+      bundlesArr.forEach(bundle => {
+        nodeIdsChildOfSelected.push(bundle.childNodeId)
+      })
+    })
+    if (selectedNode.incomingBundles) {
+      Object.keys(selectedNode.incomingBundles).forEach(id => nodeIdsParentOfSelected.push(id))
+    }
+    //console.log(selectedNode.id)
+  }
+
   //color = d3.scaleOrdinal(d3.schemeObservable10).domain(Object.keys(uniqueBundleParents))
 
-  return <svg
-    width={tangleLayout.layout.width}
-    height={tangleLayout.layout.height}
-    style={{ backgroundColor: backgroundColor }}
-  >
-    <style>{`
+  console.log("TangledTree rerender")
+  return (
+    <ReactSVGPanZoom
+      ref={Viewer}
+      width={window.innerWidth} height={window.innerHeight}
+      tool={tool} onChangeTool={setTool}
+      value={value} onChangeValue={setValue}
+      onZoom={e => console.log('zoom')}
+      onPan={e => console.log('pan')}
+      onClick={() => {
+        if (hoveredNodeId && mouseStillOverHoveredNode.current) {
+          onClick_node(selectedNode)
+        }
+        else {
+          currentSelectionLocked.current = false
+          setHoveredNodeId('')
+        }
+      }}
+    >
+      <svg
+        width={tangleLayout.layout.width}
+        height={tangleLayout.layout.height}
+        style={{ backgroundColor: options.backgroundColor }}
+      >
+        <style>{`
       text {
         font-family: sans-serif;
         font-size: 10px;
@@ -295,62 +429,100 @@ export const tangledTreeVisualization = (data, {
       }
     `}</style>
 
-    {/*
+        {/*
     A 'bundle' refers to a set of lines of the same color. It's unclear how bundles are created.
     */}
 
-    {tangleLayout.bundles.map((bundle, i) => {
-      const d = bundle.links
-        .map(
-          link => `
+        {tangleLayout.bundles.map((bundle, i) => {
+          const d = bundle.links
+            .map(
+              link => {
+                link.c1 = 10
+                return `
         M${link.x_target} ${link.y_target}
         L${link.x_bundle - link.c1} ${link.y_target}
         A${link.c1} ${link.c1} 90 0 1 ${link.x_bundle} ${link.y_target + link.c1}
         L${link.x_bundle} ${link.y_source - link.c2}
         A${link.c2} ${link.c2} 90 0 0 ${link.x_bundle + link.c2} ${link.y_source}
         L${link.x_source} ${link.y_source}`
-        )
-        .join("");
-      return <React.Fragment>
-        <path class="link" d={d} stroke={backgroundColor} stroke-width={3} />
-        <path class="link" d={d} stroke={color(bundle.parents[0]?.id)} stroke-width={2} />
-      </React.Fragment>;
-    })}
+              })
+            .join("");
+          return <React.Fragment>
+            {/*<path class="link" d={d} stroke={backgroundColor} stroke-width={3} />*/}
+            <path class="link" d={d} stroke={options.color(bundle.parents[0]?.id)} stroke-width={2} />
+          </React.Fragment>;
+        })}
 
-    {tangleLayout.nodes.map(
-      node => <React.Fragment>
-        <path class="selectable node"
-          data-id={node.id}
-          stroke="black"
-          stroke-width="8"
-          d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${node.y + node.height / 2}`}
-        />
+        {tangleLayout.nodes.map(
+          node => {
+            let isNodeSelected = false
+            let nodeColor = "white"
+            let nodeScale = 1
+            const selectedNodeScaleFactor = 3
+            if (node.id == hoveredNodeId) {
+              isNodeSelected = true
+              nodeColor = "blue"
+              nodeScale = selectedNodeScaleFactor
+            }
+            else if (nodeIdsParentOfSelected.includes(node.id)) {
+              isNodeSelected = true
+              nodeColor = "red"
+              nodeScale = selectedNodeScaleFactor * 1
+            }
+            else if (nodeIdsChildOfSelected.includes(node.id)) {
+              isNodeSelected = true
+              nodeColor = "green"
+              nodeScale = selectedNodeScaleFactor * 1
+            }
 
-        <path class="node"
-          stroke="white"
-          stroke-width="4"
-          d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${node.y + node.height / 2}`}
-        />
+            return <React.Fragment>
+              <path class="selectable node"
+                data-id={node.id}
+                stroke="black"
+                stroke-width={4 * nodeScale + 4}
+                d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${node.y + node.height / 2}`}
+                onMouseOver={() => onHoverNode(node)}
+                onMouseOut={() => onStopHoveringNode()}
+                cursor='pointer'
+              />
 
-        <text class="selectable"
-          data-id={node.id}
-          x={node.x + 4}
-          y={node.y - node.height / 2 - 4}
-          stroke={backgroundColor}
-          stroke-width="2"
-        >
-          {node.id}
-        </text>
+              <path class="node"
+                stroke={nodeColor}
+                stroke-width={4 * nodeScale}
+                d={`M${node.x} ${node.y - node.height / 2} L${node.x} ${node.y + node.height / 2}`}
+                onMouseOver={() => onHoverNode(node)}
+                onMouseOut={() => onStopHoveringNode()}
+                cursor='pointer'
+              />
 
-        <text
-          x={node.x + 4}
-          y={node.y - node.height / 2 - 4}
-          style={{ pointerEvents: 'none' }}
-        >
-          {node.id}
-        </text>
-      </React.Fragment>
-    )}
+              <text class="selectable"
+                data-id={node.id}
+                x={node.x + 4}
+                y={node.y - node.height / 2 - 4}
+                stroke={options.backgroundColor}
+                stroke-width="2"
+                onMouseOver={() => onHoverNode(node)}
+                onMouseOut={() => onStopHoveringNode()}
+                style={{ userSelect: 'none' }}
+                cursor='pointer'
+              >
+                {node.id}
+              </text>
 
-  </svg>;
+              <text
+                x={node.x + 4}
+                y={node.y - node.height / 2 - 4}
+                style={{ pointerEvents: 'none' }}
+                fontWeight={isNodeSelected ? 700 : 400}
+                onMouseOver={() => setHoveredNodeId(node.id)}
+                onMouseOut={() => setHoveredNodeId('')}
+              >
+                {node.id}
+              </text>
+            </React.Fragment>
+          })
+        }
+      </svg>
+    </ReactSVGPanZoom >
+  );
 }

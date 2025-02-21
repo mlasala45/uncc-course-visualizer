@@ -1,0 +1,401 @@
+{
+    "131388": {
+        "courseId": "131388",
+        "name": "ITIS 1301 - Introduction to the Financial Services Industry",
+        "links": [],
+        "description": "An overview of the financial services industry, including such areas as the industry components; regulatory considerations and their impact; and relations with other institutions.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131331\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131331&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131331&display_options[location]=tooltip&show\" id=\"tt9150\" target=\"_blank\">ITCS 1301</a><span style=\"display: none !important\">&#160;</span>."
+        }
+    },
+    "131389": {
+        "courseId": "131389",
+        "name": "ITIS 1350 - eScience",
+        "links": [],
+        "description": "This course introduces the application of computational methods to scientific exploration and discovery in the natural sciences. Examples include modeling the spread of viruses, predator-prey relationship, the carbon cycle, and fish schooling. Both theory and practice of computational simulation and modeling techniques are examined as tools to support the scientific method. No computer programming knowledge is required. The course grade includes the student&#8217;s performance in <a href=\"preview_course_nopop.php?catoid=38&coid=131390\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131390&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131390&display_options[location]=tooltip&show\" id=\"tt210\" target=\"_blank\">ITIS 1350L</a><span style=\"display: none !important\">&#160;</span>. Must be taken concurrently with <a href=\"preview_course_nopop.php?catoid=38&coid=131390\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131390&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131390&display_options[location]=tooltip&show\" id=\"tt4170\" target=\"_blank\">ITIS 1350L</a><span style=\"display: none !important\">&#160;</span>.",
+        "attributes": {
+            "Credit Hours": "(4)",
+            "Corequisite(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131390\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131390&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131390&display_options[location]=tooltip&show\" id=\"tt145\" target=\"_blank\">ITIS 1350L</a><span style=\"display: none !important\">&#160;</span>.",
+            "General Education Requirement(s) Satisfied": "Natural Sciences"
+        }
+    },
+    "131390": {
+        "courseId": "131390",
+        "name": "ITIS 1350L - eScience Laboratory",
+        "links": [],
+        "description": "Laboratory exercises that introduce computational tools and techniques that support scientific exploration and discovery in the natural sciences No programming experience is required. Performance in ITIS 1350L will be counted as a portion of the <a href=\"preview_course_nopop.php?catoid=38&coid=131389\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131389&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131389&display_options[location]=tooltip&show\" id=\"tt6765\" target=\"_blank\">ITIS 1350</a><span style=\"display: none !important\">&#160;</span> grade. Must be taken concurrently with <a href=\"preview_course_nopop.php?catoid=38&coid=131389\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131389&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131389&display_options[location]=tooltip&show\" id=\"tt2077\" target=\"_blank\">ITIS 1350</a><span style=\"display: none !important\">&#160;</span>.  ",
+        "attributes": {
+            "Credit Hours": "(0)",
+            "Corequisite(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131389\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131389&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131389&display_options[location]=tooltip&show\" id=\"tt240\" target=\"_blank\">ITIS 1350</a><span style=\"display: none !important\">&#160;</span>.",
+            "General Education Requirement(s) Satisfied": "Natural Sciences Lab",
+            "Grading Method": "Graded on a Pass/No Credit basis."
+        }
+    },
+    "131391": {
+        "courseId": "131391",
+        "name": "ITIS 2110 - IT Infrastructure I: Design and Practice",
+        "links": [],
+        "description": "This course covers basics concepts for IT infrastructure systems administration such as networking administration (e.g., DNS configuration, router configuration, firewall setup, and web server configurations), operating system administration (e.g., account and privilege management, and service management). The course grade includes the student&#8217;s performance in <a href=\"preview_course_nopop.php?catoid=38&coid=131392\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131392&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131392&display_options[location]=tooltip&show\" id=\"tt6930\" target=\"_blank\">ITIS 2110L</a><span style=\"display: none !important\">&#160;</span>.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Sophomore standing or permission of department.",
+            "Corequisite(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131392\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131392&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131392&display_options[location]=tooltip&show\" id=\"tt5965\" target=\"_blank\">ITIS 2110L</a><span style=\"display: none !important\">&#160;</span>."
+        }
+    },
+    "131392": {
+        "courseId": "131392",
+        "name": "ITIS 2110L - IT Infrastructure I: Design and Practice Lab",
+        "links": [],
+        "description": "Guided laboratory exercises dealing with IT Infrastructure concepts and equipment. Performance in ITIS 2110L will be counted as portion of the <a href=\"preview_course_nopop.php?catoid=38&coid=131391\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131391&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131391&display_options[location]=tooltip&show\" id=\"tt6996\" target=\"_blank\">ITIS 2110</a><span style=\"display: none !important\">&#160;</span> grade.  ",
+        "attributes": {
+            "Credit Hours": "(0)",
+            "Corequisite(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131391\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131391&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131391&display_options[location]=tooltip&show\" id=\"tt5337\" target=\"_blank\">ITIS 2110</a><span style=\"display: none !important\">&#160;</span>.",
+            "Grading Method": "Graded on a Pass/No Credit basis."
+        }
+    },
+    "131393": {
+        "courseId": "131393",
+        "name": "ITIS 3135 - Web-Based Application Design and Development",
+        "links": [
+            "131338"
+        ],
+        "description": "Design and programming concepts for developing interactive web based applications: HTML, CSS, the Document Object Model (DOM), event-driven programming, client side scripting, and web security considerations.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  with grade of C or above."
+        }
+    },
+    "131394": {
+        "courseId": "131394",
+        "name": "ITIS 3105 - Server-Side Applications and Data Management",
+        "links": [
+            "131393",
+            "131330"
+        ],
+        "description": "This course covers principles that are important for implementing advanced Web-based applications. Emphasis is placed on industrial and business applications which require robust and secure implementations. Server-side scripting and processing techniques are exercised in course projects.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3135  and ITSC 1213 , or permission of department."
+        }
+    },
+    "131395": {
+        "courseId": "131395",
+        "name": "ITIS 3246 - IT Infrastructure and Security",
+        "links": [
+            "131346"
+        ],
+        "description": "The concepts for the design and implementation of robust IT infrastructures. Topics include: system hardening, secured access, file storage services, as well as advanced topics in design and configuration of network based services.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 3146"
+        }
+    },
+    "131396": {
+        "courseId": "131396",
+        "name": "ITIS 3130 - Introduction to Human-Centered Computing",
+        "links": [],
+        "description": "Introduction to the dynamic field of Human-Centered Computing, which integrates principles of computer science, cognitive psychology, and design to create technology interfaces that prioritize user needs, experiences, and ethical considerations. Topics include: cognitive science principles to understand human information processing, user interface and user experience design techniques, ethical implications in technology, accessibility, and data visualization. Students will gain an understanding of user-centric design principles and the skills to evaluate and make ethical decisions in technology development. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Sophomore standing."
+        }
+    },
+    "131397": {
+        "courseId": "131397",
+        "name": "ITIS 4350 - Design Prototyping",
+        "links": [],
+        "description": "Introduction to theory and approaches for rapid prototyping in interface design. Explores theoretical constructs behind rapid prototyping and how it relates to Human-Computer Interaction.  Students study evolutionary prototyping. This begins with low fidelity prototyping techniques such sketching and paper prototyping, and progressively iterate through higher fidelity prototyping techniques using digital tools.  In addition to software prototyping, the course also provides an introduction to physical prototyping.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Sophomore standing.",
+            "Cross-listed Course(s)": "ITIS 5350"
+        }
+    },
+    "131398": {
+        "courseId": "131398",
+        "name": "ITIS 3200 - Introduction to Information Security and Privacy",
+        "links": [
+            "131338"
+        ],
+        "description": "An introductory overview of key issues and solutions for information security and privacy.  Topics include: security concepts and mechanisms; security technologies; authentication mechanisms; mandatory and discretionary controls; basic cryptography and its applications; intrusion detection and prevention; information systems assurance; anonymity and privacy issues for information systems.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214"
+        }
+    },
+    "131399": {
+        "courseId": "131399",
+        "name": "ITIS 3300 - Software Requirements and Project Management",
+        "links": [
+            "131393"
+        ],
+        "description": "Introduction to requirement engineering and project management methodologies. Topics include: requirements elicitation, specification, and validation; structural, informational, behavioral, security, privacy, and computer user interface requirements; scenario analysis; application of object-oriented methodologies in requirements gathering; spiral development model; risk management models; software engineering maturity model; project planning and milestones; cost estimation; team organizations and behavior. Case studies will be used.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3135  or permission of department."
+        }
+    },
+    "131400": {
+        "courseId": "131400",
+        "name": "ITIS 3310 - Software Architecture and Design",
+        "links": [
+            "131338"
+        ],
+        "description": "Introduction to software design with emphasis on architectural design and design patterns. Models of software architecture. Architecture styles and patterns, including explicit, event-driven, client-server, and middleware architectures. Decomposition and composition of architectural components and interactions. Use of non-functional requirements for tradeoff analysis. Component based software development, deployment and management. A system design language, such as UML, are introduced and used throughout the course.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  or permission of department."
+        }
+    },
+    "131401": {
+        "courseId": "131401",
+        "name": "ITIS 3320 - Introduction to Software Testing and Assurance",
+        "links": [
+            "131398",
+            "131399"
+        ],
+        "description": "Methods of evaluating software for correctness, and reliability including code inspections, program proofs and testing methodologies. Formal and informal proofs of correctness. Code inspections and their role in software verification. Unit and system testing techniques, testing tools and limitations of testing. Statistical resting, reliability models.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3200  and ITIS 3300  or permission of department."
+        }
+    },
+    "131402": {
+        "courseId": "131402",
+        "name": "ITIS 4166 - Network-Based Application Development",
+        "links": [
+            "131350",
+            "131393"
+        ],
+        "description": "Examines the issues related to network based application development. Topics include: introduction to computer networks, web technologies and standards, network based programming methodologies, languages, tools and standards.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITCS 3160  and ITIS 3135"
+        }
+    },
+    "131403": {
+        "courseId": "131403",
+        "name": "ITIS 4170 - Advanced Client Applications",
+        "links": [
+            "131393",
+            "131338"
+        ],
+        "description": "The theory and practice of techniques to develop Web applications that have the features and functionality of traditional desktop applications, dealing with the browser as graphical user interface and the Internet as platform, with attention to interactivity, speed, functionality, and usability. Technologies covered include: X/D/HTML, DOM, CSS, and client-side scripting for layout and formatting, data interaction formats such as XML and JSON, and asynchronous server interaction with clientside scripting and XML (AJAX). The course will examine emerging frameworks for development support, as well as typical applications such as mapping &#8220;mashups,&#8221; folksonomies, and social networking.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3135  and ITSC 2214 ."
+        }
+    },
+    "131404": {
+        "courseId": "131404",
+        "name": "ITIS 4180 - Mobile Application Development",
+        "links": [
+            "131338"
+        ],
+        "description": "Mobile platforms are at the center of attention of users and organizations nowadays. Most organizations and businesses are rapidly migrating toward the cloud and need to provide a fast and easy mechanism for users to stay connected to their services. Mobile applications are the top trend nowadays given the high variety of new mobile devices and platforms such as Apple&#8217;s iOS and Google&#8217;s Android. In this course, students are introduced to the foundations of mobile development and its unique requirements and constraints. Students design and build a variety of mobile applications with a hands-on and project-based approach.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 2214  or permission of department.",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131374\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131374&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131374&display_options[location]=tooltip&show\" id=\"tt2264\" target=\"_blank\">ITCS 4180</a><span style=\"display: none !important\">&#160;</span>."
+        }
+    },
+    "131405": {
+        "courseId": "131405",
+        "name": "ITIS 4221 - Secure Programming and Penetration Testing",
+        "links": [
+            "131393"
+        ],
+        "description": "Techniques for web application penetration testing, secure software development techniques for network based applications. Automated approaches such as static code analysis and application scanning are also discussed.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3135  or permission of department"
+        }
+    },
+    "131406": {
+        "courseId": "131406",
+        "name": "ITIS 4250 - Computer Forensics",
+        "links": [
+            "131393"
+        ],
+        "description": "The identification, extraction, documentation, interpretation, and preservation of computer media for evidentiary purposes and/or root cause analysis. Topics include: techniques for discovering digital evidence; responding to electronic incidents; tracking communications through networks; understanding electronic media, crypto-literacy, data hiding, hostile code and Windows™ and UNIX™ system forensics; and the role of forensics in the digital environment.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3135  or permission of department."
+        }
+    },
+    "131407": {
+        "courseId": "131407",
+        "name": "ITIS 4310 - Web Mining",
+        "links": [
+            "131350"
+        ],
+        "description": "Topics include: measuring and modeling the Web; crawling, Web search and information retrieval; unsupervised learning, supervised learning, semi-supervised learning in Web context; social network analysis and hyperlink analysis; text parsing and knowledge representation.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Pre- or Corequisite(s)": "ITCS 3160  or permission of department."
+        }
+    },
+    "131408": {
+        "courseId": "131408",
+        "name": "ITIS 4990 - Undergraduate Research",
+        "links": [],
+        "description": "Undergraduate research under the supervision and direction of a faculty member.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Permission of department.",
+            "Repeatability": "May be repeated for credit up to 6 credit hours."
+        }
+    },
+    "132722": {
+        "courseId": "132722",
+        "name": "ITIS 4390 - Interaction Design Projects",
+        "links": [
+            "131396",
+            "131393"
+        ],
+        "description": "Project-based learning development of the skills essential for designing and implementing innovative and user-centric digital experiences. Students will learn to design low and high-fidelity prototypes, leveraging versatile platforms, to conceptualize and iterate on interactive solutions, and implementing user interfaces using libraries such as ReactJS, gaining proficiency in creating responsive and engaging web applications. Emphasizing collaboration, students will work in teams on a semester-long project, integrating ethical principles and usability considerations into their designs. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3130 , ITIS 3135",
+            "Cross-listed Course(s)": "ITIS 5390"
+        }
+    },
+    "132852": {
+        "courseId": "132852",
+        "name": "ITIS 4214 - Usable Security and Privacy",
+        "links": [],
+        "description": "People are often considered the weakest link in security and privacy systems. However, this does not mean that people are at fault. Instead, systems themselves are not designed around users&#8217; conceptions and behaviors with regard to security and privacy. Thus, how people interact with current applications is critical to a system&#8217;s overall security and privacy. This course provides an introduction to the usability and user interface issues related to a variety of security and privacy technologies and tools. Students will examine the security and privacy implications of users&#8217; behaviors with applications, and design guidelines for improving both the security and usability of those mechanisms. Prior courses in security and privacy or human-centered computing are a plus. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Junior or Senior standing"
+        }
+    },
+    "132858": {
+        "courseId": "132858",
+        "name": "ITIS 4260 - Introduction to Security Analytics",
+        "links": [
+            "131398",
+            "131346",
+            "132539"
+        ],
+        "description": "Focuses on security related sense-making and decision-making based on data analytics techniques. Topics include:  data cleaning and storage techniques, introduction to R, clustering analysis and statistical inference for security; log analysis; event correlation, anomaly detection, cyber threat intelligence, and use of public cybersecurity information resources.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3200 , ITSC 3146 , and STAT 1220  or equivalent."
+        }
+    },
+    "133082": {
+        "courseId": "133082",
+        "name": "ITIS 4010 - Topics in Software and Information Systems",
+        "links": [],
+        "description": "Topics in software and information systems selected to supplement the regular course offerings.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Restriction(s)": "Junior standing.",
+            "Repeatability": "May be repeated for credit with change of topic."
+        }
+    },
+    "133125": {
+        "courseId": "133125",
+        "name": "ITIS 3216 - Introduction to Cognitive Science",
+        "links": [
+            "132209"
+        ],
+        "description": "Interdisciplinary introduction to the science of the mind. Broad coverage of such topics as philosophy of mind; human memory processes; reasoning and problem-solving; artificial intelligence; language processing (human and machine); neural structures and processes; and vision.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "PSYC 1101  with grade of C or above, or permission of department.",
+            "Cross-listed Course(s)": "<a href=\"preview_course_nopop.php?catoid=38&coid=131356\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=131356&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=131356&display_options[location]=tooltip&show\" id=\"tt9847\" target=\"_blank\">ITCS 3216</a><span style=\"display: none !important\">&#160;</span> and <a href=\"preview_course_nopop.php?catoid=38&coid=132245\" onclick=\"acalogPopup('preview_course.php?catoid=38&coid=132245&print', '3', 770, 530, 'yes');return false;\" rel=\"remote /ajax/preview_course.php?catoid=38&coid=132245&display_options[location]=tooltip&show\" id=\"tt8998\" target=\"_blank\">PSYC 3216</a><span style=\"display: none !important\">&#160;</span>"
+        }
+    },
+    "133198": {
+        "courseId": "133198",
+        "name": "ITIS 4246 - Competitive Cyber Defense",
+        "links": [
+            "131398",
+            "131395"
+        ],
+        "description": "Hands-on experience with designing, deploying, securing, and defending enterprise network services.  Topics include: securing network communication, single sign-on services, firewall and IDS deployment, security policy design and development, log analysis, securing critical network infrastructure, and network access control policies.  Students are expected to demonstrate their ability to defend these services against adversary attacks.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITIS 3200  and ITIS 3246",
+            "Cross-listed Course(s)": "ITIS 5246"
+        }
+    },
+    "133595": {
+        "courseId": "133595",
+        "name": "ITIS 4261 - Introduction to Secured Cloud Computing",
+        "links": [
+            "131346"
+        ],
+        "description": "Design and deployment of secure and robust cloud computing solutions. Instructions will rely on hands-on labs. It focuses on selecting appropriate components in the cloud and securely configuring them to support a specific application.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 3146",
+            "Cross-listed Course(s)": "ITIS 5261",
+            "Repeatability": "No"
+        }
+    },
+    "138160": {
+        "courseId": "138160",
+        "name": "ITIS 3261 - Foundations of Cloud Computing",
+        "links": [
+            "131329"
+        ],
+        "description": "Foundational elements of cloud computing. Students should be able to create simple cloud-based solutions using popular tools. Topics covered include: introduction to Internet protocols, virtual cloud networks, introduction to command line scripting, virtual servers, containers, serverless computing, cloud data storage and database options, identity and access management, content delivery networks, load balancing and cost optimization.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Prerequisite(s)": "ITSC 1212"
+        }
+    },
+    "138188": {
+        "courseId": "138188",
+        "name": "ITIS 3140 - User Experience Methods",
+        "links": [],
+        "description": "Focuses on the various methods used to create and enhance user experiences with technology. Incorporating elements of design thinking, this course equips students with a comprehensive toolkit to systematically identify, empathize with, and address user needs, preferences, and pain points. Students will explore an array of user-centric research methodologies, such as focus groups, user personas, and journey mapping, to gain an understanding of the target audience. They will practice heuristic evaluations, usability testing, and A/B testing to assess and refine interfaces, ensuring optimal usability and satisfaction. Through hands-on projects and case studies, students will employ design thinking processes, fostering creativity, collaboration, and iterative problem-solving to innovate and reiterate user interfaces. By the end of the course, students will have mastered a diverse range of UX methods and proficiency in selecting the most appropriate techniques for various design challenges, positioning them to excel in the dynamic and user-centered field of UX design.",
+        "attributes": {
+            "Credit Hours": "(3)"
+        }
+    },
+    "138197": {
+        "courseId": "138197",
+        "name": "ITIS 4353 - Social Technology Design",
+        "links": [],
+        "description": "Social media platforms such as Wikipedia, Facebook, TikTok, Discord, Twitch, and YouTube are among the most popular in the world. They feature some of the most interesting social interactions and social dynamics that continue to fascinate computing and informatics researchers. This course will examine designs for these and other technologies, principles of online communities, and the social impact of spending at least part of our lives online. Students will summarize and reflect on many online readings, participate in in-class activities and discussion, give in-class presentations, and complete 2-3 assignments and a small-group project. This course does not require any technical or design experience. However, skills in statistical data analysis, machine learning, programming, social-behavioral sciences, or interaction design are a plus. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "ITIS 5353"
+        }
+    },
+    "138198": {
+        "courseId": "138198",
+        "name": "ITIS 4355 - Accessible Design and Implementation",
+        "links": [],
+        "description": "Introduction to foundational principles of accessibility, as well as accessible practices in design and development of computing interfaces and applications. Accessibility focuses on enabling as many people as possible to use facilities, systems, and services, even when some people&#8217;s abilities are limited in some way, such as for persons with disabilities.  Proactive design and development to support different ways of interacting with computing applications provides broader access and better experiences for more users.  This course provides a foundational understanding of disability and assistive technology, legal considerations, and best practices for accessible design and development in computing applications.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "ITIS 5355"
+        }
+    },
+    "138199": {
+        "courseId": "138199",
+        "name": "ITIS 4358 - Physical Computing",
+        "links": [],
+        "description": "Physical computing considers tangible, embedded, and embodied ways that computing systems can interact directly with people and the physical world, such as in smart products and environments, wearable computing, or Internet of Things devices.  This involves the design and development of physical forms using digital fabrication approaches, such as 3D printing, laser cutting, or Computer Numerical Control (CNC) techniques.  It also involves the design and development of interactive systems that interact through physical forms by employing physical / sensory inputs and outputs.  The course provides foundations in digital design and digital fabrication, small computing systems and programming, physical prototyping with sensors and effectors, as well as elements of user experience design for tangible computing systems.",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "ITIS 5358"
+        }
+    },
+    "138200": {
+        "courseId": "138200",
+        "name": "ITIS 4360 - Human-Centered Artificial Intelligence",
+        "links": [],
+        "description": "Explores the intersection of artificial intelligence and human-centered design, equipping students with the knowledge and skills to develop AI systems that are not only technically advanced but also ethical, responsible, and human-centric. Through a blend of theory and practical application, students will learn about AI technologies, ethical considerations, and methods for incorporating human perspectives. They will learn to create AI systems that align with user needs and societal values, applying principles of transparency, fairness, and accountability. The course covers key topics such as interpretability, bias mitigation, and user-centered AI interface design. Additionally, students will engage in real-world case studies and projects, where they will develop AI solutions that address genuine human needs while navigating the complexities of AI ethics. ",
+        "attributes": {
+            "Credit Hours": "(3)",
+            "Cross-listed Course(s)": "ITIS 5360"
+        }
+    }
+}
