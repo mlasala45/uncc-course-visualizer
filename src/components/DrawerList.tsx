@@ -13,6 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { catalogDownloader } from '../App';
 import { CATALOG_ID_GRADUATE_2024_TO_2025, CATALOG_ID_UNDERGRAD_2024_TO_2025 } from '../catalog-downloader/constants';
 import { CatalogId, CourseDataEntry, CourseId, CourseRecordsKey } from '../catalog-downloader/types';
+import UpdateIcon from '@mui/icons-material/Update';
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -67,8 +68,6 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
 
         const numMatches = matchingRecordsRef.current.size
         setNumMatchingRecords(numMatches)
-
-        regenerateGraph(matchingRecordsRef.current)
     }
 
     function getPrefixes() {
@@ -93,6 +92,7 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
         Promise.all(promises).then(() => {
             stopUpdatingRecords()
             onRecordsChanged()
+            regenerateGraph(matchingRecordsRef.current)
         }).catch((reason) => {
             console.error(reason)
             stopUpdatingRecords()
@@ -133,6 +133,8 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
         setPrefixStr(newVal.toUpperCase())
     }
 
+    let invalidInputStr = getPrefixes().length == 0
+
     return (
         <Box sx={{ width: 400 }} role="presentation">
             <DrawerHeader>
@@ -143,7 +145,23 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
             </DrawerHeader>
             <Divider style={{ marginBottom: 25 }} />
             <Box style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', margin: 20, gap: 10 }}>
-                <TextField value={prefixStr} label="Course Prefix" onChange={(event) => handlePrefixStrChange(event.target.value, prefixStr)} />
+
+                <Stack direction='row' gap={2} alignItems='center'>
+                    <TextField value={prefixStr} label="Course Prefix" onChange={(event) => handlePrefixStrChange(event.target.value, prefixStr)} />
+                    <IconButton
+                        size='small'
+                        style={{ margin: 0, color: 'black' }}
+                        onClick={() => {
+
+                            regenerateGraph(matchingRecordsRef.current)
+                        }}
+                    ><UpdateIcon /></IconButton>
+                </Stack>
+                <Typography variant='body1' color={invalidInputStr ? 'red' : 'green'} align='left'>
+                    {invalidInputStr ?
+                        <Fragment>Invalid input. Requires four letter prefix codes, separated by commas.<br/>Eg. ITSC,ECGR,ITIS</Fragment> :
+                        `Click button to reload graph.`}
+                </Typography>
                 <Box display='flex' flexDirection='column' alignItems={'flex-start'}>
                     <b>Catalogs</b>
                     {CatalogCheckBox("2024-2025 Undergraduate", CATALOG_ID_UNDERGRAD_2024_TO_2025)}
