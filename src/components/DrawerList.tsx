@@ -92,7 +92,11 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
         for (const str of prefixes) {
             if (!str || str.length != 4) return []
         }
-        return prefixes
+        const prefixesUnique : string[] = []
+        prefixes.forEach(str => {
+            if (!prefixesUnique.includes(str)) prefixesUnique.push(str)
+        })
+        return prefixesUnique
     }
 
     function startUpdatingRecords() {
