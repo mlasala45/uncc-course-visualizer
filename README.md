@@ -35,7 +35,7 @@ For some reason, the UNCC course catalog is configured to only accept requests f
 
 There are two main ways to do this:
 
-#### Run your browser in unsafe mode
+#### <ins>Run your browser in unsafe mode</ins>
 
 For Google Chrome (on Windows), you can run this command in command prompt:
 
@@ -52,7 +52,7 @@ Running the command will open a new Chrome window in unsafe mode, which can use 
 
   
 
-#### Use a proxy
+#### <ins>Use a proxy</ins>
 
 It's trivial to use a lightweight program called a "CORS proxy" to get around this issue. However, I'm not going to pay to have one running at all times so people can use this website 😔. So, you're either going to have to run one yourself, or find one online.
 
@@ -72,7 +72,7 @@ The proxy is running! You can point the website to your proxy in the Network Set
 
   
 
-##### Explanation
+##### What was that command?
 
 NPX is an command from NPM that runs scripts without having to separately download them.
 
