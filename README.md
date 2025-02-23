@@ -1,70 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# UNCC Course Visualizer
 
-## Available Scripts
+This [in-browser project](https://mlasala45.github.io/projects/uncc-course-visualizer/) downloads course listings and details from the UNCC course catalog, and displays them in a "tangled tree" format that visualizes their prerequisite structure. My hope is that it can be useful for gaining an overall understanding of the courses in a department, and planning what you need to take.
 
-In the project directory, you can run:
+  ![enter image description here](http://mlasala45.github.io/images/repos-content/uncc-course-visualizer/preview.png)
 
-### `npm start`
+## Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can find a link to the live site at the top of this document. Press [Tab] to open the control panel, where you can select your options and retrieve course listings. The download process should take around 10-20s. Once courses are retrieved, they will be remembered for the remainder of the session. Reloading the graph with the "Reload Graph" button will only use courses that are already retrieved.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  
 
-### `npm test`
+> [!NOTE]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> As of right now, course listings are not stored between sessions. If you reload, you will have to retrieve the courses again. This will be fixed in future updates.
 
-### `npm run build`
+  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Getting around CORS to download course listings
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> [!WARNING]
 
-### `npm run eject`
+> You must follow one of these options to use the app. If you do not, it will always fail to retrieve courses.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CORS is a browser safety feature that lets servers specify what websites they expect to receive requests from. This is to prevent scams like a webpage accessing your bank in the background. The bank tells your browser that it should only be receiving requests from its own website, so your browser blocks the request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For some reason, the UNCC course catalog is configured to only accept requests from their catalog page. Since this is browser-enforced, programs on your computer can ignore it, but browsers will refuse to talk to the catalog. Because of this, to download courses, you need to get around the CORS policy.
 
-## Learn More
+  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+There are two main ways to do this:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Run your browser in unsafe mode
 
-### Code Splitting
+For Google Chrome (on Windows), you can run this command in command prompt:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`chrome.exe --user-data-dir="C:/Chrome Dev Session" --disable-web-security`
 
-### Analyzing the Bundle Size
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You will have to change directories to where `chrome.exe` is located first.
 
-### Making a Progressive Web App
+For me, that is: `cd "C:\Program Files\Google\Chrome\Application"`
+If it's not that, google should be able to help you find your Chrome install location.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Running the command will open a new Chrome window in unsafe mode, which can use the website correctly.
 
-### Advanced Configuration
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Use a proxy
 
-### Deployment
+It's trivial to use a lightweight program called a "CORS proxy" to get around this issue. However, I'm not going to pay to have one running at all times so people can use this website 😔. So, you're either going to have to run one yourself, or find one online.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  
 
-### `npm run build` fails to minify
+The website can be set to send all of its download requests to the proxy, and the proxy will immediately resend them to the actual catalog. Because it's a program, not a browser, it can ignore CORS. It passes the catalog response back to the website, and you get your course information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+
+I have a script for a lightweight CORS proxy using NodeJS hosted on my website. To run it, you will need to first install [NPM](https://www.npmjs.com/), a popular package manager web developers use to download things. Then, run:
+
+`npx https://mlasala45.github.io/files/cors-proxy.tgz https://catalog.charlotte.edu`
+
+  
+
+The proxy is running! You can point the website to your proxy in the Network Settings tab in the control menu. By default, the proxy should run on `http://localhost:4000`.
+
+  
+
+##### Explanation
+
+NPX is an command from NPM that runs scripts without having to separately download them.
+
+If you like, you can download the `https://mlasala45.github.io/files/cors-proxy.tgz` file yourself and see what it's doing before you install it. A TGZ is basically just another kind of ZIP file. The `package.json` file installs the dependencies we need. The file in the `bin` folder loads up `ts-node`, a version of NodeJS that runs TypeScript (better, modern JavaScript), and then runs the actual `cors-proxy.ts` file that does the proxying.

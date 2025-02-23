@@ -421,15 +421,13 @@ export const TangledTreeVisualization = ({ graphData, rawCourseData, options = {
 
   //color = d3.scaleOrdinal(d3.schemeObservable10).domain(Object.keys(uniqueBundleParents))
 
-  console.log("TangledTree rerender")
+  //console.log("TangledTree rerender")
   return (
     <ReactSVGPanZoom
       ref={Viewer}
       width={window.innerWidth} height={window.innerHeight}
       tool={tool} onChangeTool={setTool}
       value={value} onChangeValue={setValue}
-      onZoom={e => console.log('zoom')}
-      onPan={e => console.log('pan')}
       onClick={() => {
         if (hoveredNodeId && mouseStillOverHoveredNode.current) {
           onClick_node(selectedNode)

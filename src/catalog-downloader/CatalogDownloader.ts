@@ -98,29 +98,6 @@ function extractPageCountFromCourseListingsHTML(htmlData) {
     }
 }
 
-const TARGET_URL = "http://localhost:4000"
-const TRUE_URL = "https://catalog.charlotte.edu"
-
-function generateCourseListingRequestUrl({ searchKeyword, page = 1, catalogId }: {
-    searchKeyword: string,
-    page?: number,
-    catalogId: CatalogId
-}) {
-    const database = 'Search'
-    let url = `${TARGET_URL}/search_advanced.php?cur_cat_oid=${catalogId}&search_database=${database}&search_db=${database}&location=33&sorting_type=1`
-    url += `&ecpage=${page}`
-    url += `&filter%5Bkeyword%5D=${searchKeyword}` //filter[keyword] = ...
-    return url
-}
-
-function generateCourseDataRequestUrl({ courseId, catalogId }: {
-    courseId: CourseId,
-    catalogId: CatalogId
-}) {
-    const url = `${TARGET_URL}/ajax/preview_course.php?catoid=${catalogId}&coid=${courseId}&show`
-    return url
-}
-
 interface CatalogRecordSection {
     recordKey: CourseRecordsKey,
     detailsByCourseId: Map<CourseId, CourseDataEntry>
@@ -147,12 +124,16 @@ class CatalogDownloader {
     downloadProgress: QueryDownloadProgress
     downloadEventCallback: () => void
 
+    targetURL: string
+
     constructor() {
         this.dataByRecordKey = new ArrayDictionary<CourseRecordsKey, CatalogRecordSection>({
             keyGetter: item => item.recordKey,
             keyEquals: (k0, k1) => k0.catalogId == k1.catalogId && k0.prefix == k1.prefix
         })
         this.resetDownloadProgress()
+
+        this.targetURL = "https://catalog.charlotte.edu"
     }
 
     resetDownloadProgress() {
@@ -170,6 +151,26 @@ class CatalogDownloader {
         if (this.downloadEventCallback) this.downloadEventCallback()
     }
 
+    #generateCourseListingRequestUrl({ searchKeyword, page = 1, catalogId }: {
+        searchKeyword: string,
+        page?: number,
+        catalogId: CatalogId
+    }) {
+        const database = 'Search'
+        let url = `${this.targetURL}/search_advanced.php?cur_cat_oid=${catalogId}&search_database=${database}&search_db=${database}&location=33&sorting_type=1`
+        url += `&ecpage=${page}`
+        url += `&filter%5Bkeyword%5D=${searchKeyword}` //filter[keyword] = ...
+        return url
+    }
+    
+    #generateCourseDataRequestUrl({ courseId, catalogId }: {
+        courseId: CourseId,
+        catalogId: CatalogId
+    }) {
+        const url = `${this.targetURL}/ajax/preview_course.php?catoid=${catalogId}&coid=${courseId}&show`
+        return url
+    }
+
     downloadCoursesByCOID(courseIds: CourseId[], catalogId: CatalogId) {
         courseIds.forEach(coid => {
             this.downloadCourseDetails({
@@ -184,12 +185,13 @@ class CatalogDownloader {
 
         const matches = new Set<CourseListing>()
         let page = 1
-        const url = generateCourseListingRequestUrl({
+        const url = this.#generateCourseListingRequestUrl({
             searchKeyword: coursePrefix,
             page,
             catalogId
         })
         const { data } = await axios.get(url);
+
         extractCourseListingsFromHTML(data, catalogId, matches)
 
         this.downloadProgress.numPagesDownloaded++
@@ -208,7 +210,7 @@ class CatalogDownloader {
 
         if (pageCount > 1) {
             for (page = 2; page <= pageCount; page++) {
-                const url = generateCourseListingRequestUrl({
+                const url = this.#generateCourseListingRequestUrl({
                     searchKeyword: coursePrefix,
                     page,
                     catalogId
@@ -252,7 +254,7 @@ class CatalogDownloader {
     async downloadCourseDetails({ courseId, catalogId }: {
         courseId: CourseId, catalogId: CatalogId
     }) {
-        const url = generateCourseDataRequestUrl({
+        const url = this.#generateCourseDataRequestUrl({
             courseId,
             catalogId
         })

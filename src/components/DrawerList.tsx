@@ -8,12 +8,13 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { styled, useTheme } from '@mui/material/styles';
-import { Checkbox, Stack, TextField } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, Checkbox, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Stack, TextField } from '@mui/material';
 import CircularProgress from '@mui/material/CircularProgress';
 import { catalogDownloader } from '../App';
 import { CATALOG_ID_GRADUATE_2024_TO_2025, CATALOG_ID_UNDERGRAD_2024_TO_2025 } from '../catalog-downloader/constants';
 import { CatalogId, CourseDataEntry, CourseId, CourseRecordsKey } from '../catalog-downloader/types';
 import UpdateIcon from '@mui/icons-material/Update';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { equals_QueryDownloadProcess, QueryDownloadProgress } from '../catalog-downloader/CatalogDownloader';
 import shadows from '@mui/material/styles/shadows';
 
@@ -46,7 +47,7 @@ function DownloadStatusMessages({ downloadProgress }: {
     if (downloadProgress.startedDetailsDownload)
         lines.push(typography(`Downloading course details (${downloadProgress.numDetailsDownloaded}/${downloadProgress.numCoursesDetected})`))
 
-    if(downloadProgress.error) {
+    if (downloadProgress.error) {
         color = 'red'
         lines.push(typography('Encountered error.'))
         lines.push(typography('See your browser\'s developer console for details.'))
@@ -60,18 +61,25 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
     const theme = useTheme();
 
     const [prefixStr, setPrefixStr] = useState("ITCS")
+    const [catalogAddressStr, setCatalogAddressStr] = useState("https://catalog.charlotte.edu")
+    const [proxyAddressStr, setProxyAddressStr] = useState("http://localhost:4000")
     const [changedSinceReload, setChangedSinceReload] = useState(false)
     const [retrieving, setRetrieving] = useState(false)
     const [catalogs, setCatalogs] = useState([] as CatalogId[])
     const [numMatchingRecords, setNumMatchingRecords] = useState(0)
+    const [connectionMode, setConnectionMode] = useState("direct")
 
-    const [retrievalEventCounter, setRetrievalEventCounter] = useState(0)
+    const [_, setRetrievalEventCounter] = useState(0)
 
     const matchingRecordsRef = useRef(new Map<CourseId, CourseDataEntry>())
 
     useEffect(() => {
         onRecordsChanged()
     }, [prefixStr, catalogs, retrieving])
+
+    useEffect(() => {
+        catalogDownloader.targetURL = connectionMode == "direct" ? catalogAddressStr : proxyAddressStr
+    }, [catalogAddressStr, proxyAddressStr, connectionMode])
 
     function onRecordsChanged() {
         const prefixes = getPrefixes()
@@ -191,9 +199,8 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
             </DrawerHeader>
             <Divider style={{ marginBottom: 25 }} />
             <Box style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', margin: 20, gap: 10 }}>
-
                 <Stack direction='row' gap={2} alignItems='center'>
-                    <TextField value={prefixStr} label="Course Prefix" onChange={(event) => handlePrefixStrChange(event.target.value, prefixStr)} />
+                    <TextField value={prefixStr} label="Course Prefixes (comma separated)" onChange={(event) => handlePrefixStrChange(event.target.value, prefixStr)} />
                     <IconButton
                         size='small'
                         style={{ margin: 0, color: 'black' }}
@@ -225,6 +232,36 @@ function DrawerList({ handleDrawerClose, regenerateGraph }: DrawerListProps) {
                 {retrieving && <Button variant='contained' onClick={stopUpdatingRecords}>Cancel</Button>}
                 {(retrieving || catalogDownloader.downloadProgress.error) && <DownloadStatusMessages_Memoized downloadProgress={catalogDownloader.downloadProgress} />}
             </Box>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                >
+                    <b>Network Settings</b>
+                </AccordionSummary>
+                <AccordionDetails style={{ textAlign: 'start' }}>
+                    <FormControl style={{ marginBottom: 15 }}>
+                        <FormLabel id="network-radio-buttons">Connection Type</FormLabel>
+                        <RadioGroup
+                            defaultValue="direct"
+                            name="network-radio-buttons-group"
+                            onChange={(event) => { setConnectionMode(event.target.value) }}
+                        >
+                            <FormControlLabel value="direct" control={<Radio />} label="Direct Connection" />
+                            <FormControlLabel value="proxy" control={<Radio />} label="CORS Proxy" />
+                        </RadioGroup>
+                    </FormControl>
+                    {connectionMode == "direct" && <Fragment>
+                        <TextField value={catalogAddressStr} label="Catalog Address" fullWidth onChange={(event) => setCatalogAddressStr(event.target.value)} style={{ marginBottom: 10 }} />
+                        <Typography color="green" fontStyle='italic'>Make sure you're running your browser in unsafe mode.</Typography>
+                    </Fragment>}
+                    {connectionMode == "proxy" && <Fragment>
+                        <TextField value={proxyAddressStr} label="CORS Proxy Address" fullWidth onChange={(event) => setProxyAddressStr(event.target.value)} />
+                        <Typography color="green" fontStyle='italic'>Make sure your proxy is running at this address.</Typography>
+                    </Fragment>}
+                </AccordionDetails>
+            </Accordion>
         </Box >
     )
 };

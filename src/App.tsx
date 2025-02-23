@@ -2,7 +2,6 @@ import * as d3 from "d3";
 import './App.css';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import { RenderTangledTreeChart } from "./TangledTree";
 import { constructTangleLayout, TangledTreeVisualization } from "./TangledTreeNovel";
 import HelpTwoToneIcon from '@mui/icons-material/HelpTwoTone';
 import CatalogDownloader from "./catalog-downloader/CatalogDownloader";
@@ -31,7 +30,6 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'Tab') {
-        console.log("handleKeyDown", event.key, drawerOpen)
         setDrawerOpen(value => !value);
       }
     };
