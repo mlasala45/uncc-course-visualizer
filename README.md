@@ -12,7 +12,6 @@ You can find a link to the live site at the top of this document. Press [Tab] to
   
 
 > [!NOTE]
-
 > As of right now, course listings are not stored between sessions. If you reload, you will have to retrieve the courses again. This will be fixed in future updates.
 
   
@@ -22,7 +21,6 @@ You can find a link to the live site at the top of this document. Press [Tab] to
   
 
 > [!WARNING]
-
 > You must follow one of these options to use the app. If you do not, it will always fail to retrieve courses.
 
   
